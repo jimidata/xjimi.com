@@ -42,7 +42,7 @@ var cbpAnimatedHeader = (function() {
         zooms: [14,17],
         //传入2D视图，设置中心点和缩放级别
         view: new AMap.View2D({
-            center: new AMap.LngLat(113.944518, 22.540636),
+            center: new AMap.LngLat(113.944518, 22.540136),
             zoom: 17
         })
     });
