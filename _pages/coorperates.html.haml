@@ -1,0 +1,33 @@
+- head_template =  File.read('./_includes/head.html.haml')
+- header_template =  File.read('./_includes/header.html.haml')
+- footer_template =  File.read('./_includes/footer.html.haml')
+- contact_form_template = File.read('./_includes/contact-form.html.haml')
+
+<!DOCTYPE html>
+%html
+  %head
+    = Haml::Engine.new(head_template).render
+    %link{:rel => "stylesheet", :type => "text/css", :href => "#{$base_url}/stylesheets/coorperates.css"}
+  %body
+    = Haml::Engine.new(header_template).render
+    .first-view
+      %h1
+        %img.title{:src => "#{$base_url}/img/coorperates/coorperates-title.png", "alt" => "低价甚至免费的景区接入"}
+      .welcome
+        %span.left-arrow
+        %span.text 真诚希望您的加盟！
+    .main.wrap
+      .section.trend
+        .content.medium-4.medium-offset-8
+          %h3.title 行业升级趋势
+          %p.details 可视化管理，智能化运营 <br/> 落实“智慧景区”建设
+      .section.profit
+        .content.medium-4
+          %h3.title 增加利润来源
+          %p.details 平台规模效应下基于 <br/> 游客流量的收入分成 <br/> 为景区创造稳固客观的利润来源
+      .section.game
+        .content.medium-4.medium-offset-8
+          %h3.title 游戏活动承接
+          %p.details 依靠成熟的互动活动及 <br/> 虚拟现实游戏策划 <br/> 激活景区人气
+    = Haml::Engine.new(contact_form_template).render
+    = Haml::Engine.new(footer_template).render

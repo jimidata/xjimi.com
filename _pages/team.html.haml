@@ -1,0 +1,68 @@
+- head_template =  File.read('./_includes/head.html.haml')
+- header_template =  File.read('./_includes/header.html.haml')
+- footer_template =  File.read('./_includes/footer.html.haml')
+- contact_form_template = File.read('./_includes/contact-form.html.haml')
+
+<!DOCTYPE html>
+%html
+  %head
+    = Haml::Engine.new(head_template).render
+    %link{:rel => "stylesheet", :type => "text/css", :href => "#{$base_url}/stylesheets/jquery.bxslider.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "#{$base_url}/stylesheets/team.css"}
+  %body
+    = Haml::Engine.new(header_template).render
+    .first-view
+      %ul.bxslider
+        %li
+          %img{:src => "#{$base_url}/img/team/overall.jpg"}
+        %li
+          %img{:src => "#{$base_url}/img/team/slider-1.jpg"}
+          .caption
+            %img.title{:src => "#{$base_url}/img/team/slider-1-caption-title.png"}
+            .details 我们拥60后学术泰斗为顾问，70后行业先驱为导师 80后技术大拿为后盾，90后极客创客为先锋
+        %li
+          %img{:src => "#{$base_url}/img/team/slider-2.jpg"}
+          .caption
+            %img.title{:src => "#{$base_url}/img/team/slider-2-caption-title.png"}
+            .details 我们邀兼具国际视野与多年国内旅游行业实战经验的领导者为战略合作伙伴 全力着眼于国内旅游市场
+        %li
+          %img{:src => "#{$base_url}/img/team/slider-3.jpg"}
+          .caption
+            %img.title{:src => "/img/team/slider-3-caption-title.png"}
+            .details 我们要做全球智慧旅游行业的革新者与领导者
+        %li
+          %img{:src => "#{$base_url}/img/team/slider-4.jpg"}
+          .caption
+            %img.title{:src => "#{$base_url}/img/team/slider-4-caption-title.png"}
+            .details 我们勇夺国际顶尖大数据学术会议演示系统金奖，创造亚洲历史 
+    .advisory.section.wrap
+      %h3.section-title 顾问
+      %ul.members
+        %li.member
+          .avatar
+            %img{:src => "#{$base_url}/img/avatars/LionelNi.jpg"}
+          .information
+            .title
+              %span.name 倪明选
+              %span 澳门大学副校长
+            .detail 倪明选教授与1973年毕业于国立台湾大学电机工程系，1977年在美国威恩州立大学（Wayne State Universi-ty）获得电子和计算机工程硕士学位，1980年在美国普渡大学（Purdue University）获得电机工程博士学位。在加入澳门大学之前，倪教授是香港科技大学计算机科学与工程系主任（2002至2008）、校长特别助理（2010至2014）、香港科大霍英东研究院院长（2011至2014）、中国教育部/微软亚洲研究院资讯科技重点实验室主任（2004至2014）。从1995至1996他担任美国自然科学基金委员会微电子系统结构方向的主任。从1998至2001年，他在美国创立了CC&T技术公司并担任执行长，他领导的团队设计了一系列网络电话有关的产品。
+        %li.member
+          .avatar
+            %img{:src => "#{$base_url}/img/avatars/Qiang_Yang.jpg"}
+          .information
+            .title
+              %span.name 杨 强
+              %span 香港科技大学计算机系主任   教授
+            .detail 杨强，华为公司诺亚方舟实验室主任, 香港科技大学计算机系主任，教授，博士生导师。他是AAAI Fellow, IEEE Fellow, AAAS Fellow, IAPR Fellow和ACM杰出科学家。他的主要研究兴趣是人工智能和数据挖掘。杨强于1982年毕业于北京大学天体物理专业，获得学士学位。分别于1985年 和1987年毕业于美国马里兰大学的计算机系和天文学系，获得双硕士学位。于1989年毕业于马里兰大学计算机系，获得计算机博士学位。自1989年到1995先后任滑铁卢大学的助理教授和副教授，1995年到2001年在加拿大西蒙•弗雷泽(Simon Fraser 大学先后任副教授，正教授一职，同期担任NSERC工业研究主任。他发表了300多篇关于人工智能和数据挖掘的论文。他曾受WSDM2013, SDM2012, IJCAI 2009, ACL 2009 和ACML 2009等著名国际会议的邀请在会议上做主题演讲。他是国际人工智能大会（IJCAI) 的董事会成员和2015年在阿根廷举办 IJCAI 会议的程序委员会主席。
+        %li.member
+          .avatar
+            %img{:src => "#{$base_url}/img/avatars/chenlei_photo.jpg"}
+          .information
+            .title
+              %span.name 陈雷
+              %span 香港科技大学副教授
+            .detail 陈雷，香港科技大学副教授，博士生导师，ACM Hong Kong计算机学会主席 。1994年在天津大学计算机科学与工程系获得工学学士学位，1997年于泰国亚洲理工大学获得硕士学位，2005年在加拿大滑铁卢大学计算机科学系获得博士学位。并于同年开始任教于香港科技大学计算机科学与工程系，历任助理教授、副教授、系研究生部主任、副系主任。他的研究领域包括：概率和不确定性数据库、社交网络中的众包分析、多媒体和时间序列数据库、隐私保护数据的发布等。2009与2010年，陈博士的论文被DASFAA 2009 & 2010连续授予最佳论文奖。近年来，陈雷博士举办了一系列国际学术会议并担任ACM SIGMM 2011， ACM CIKM 2012和IEEE ICDE 2012会议的程序委员会副主席，担任IEEE TKDE与DAPD等国际期刊编委。
+    = Haml::Engine.new(contact_form_template).render
+    = Haml::Engine.new(footer_template).render
+    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.bxslider/jquery.bxslider.min.js"}
+    %script{:type => "text/javascript", :src => "#{$base_url}/js/team.js"}

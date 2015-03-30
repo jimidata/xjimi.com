@@ -1,0 +1,72 @@
+- head_template =  File.read('./_includes/head.html.haml')
+- header_template =  File.read('./_includes/header.html.haml')
+- footer_template =  File.read('./_includes/footer.html.haml')
+- contact_form_template = File.read('./_includes/contact-form.html.haml')
+
+<!DOCTYPE html>
+%html
+  %head
+    = Haml::Engine.new(head_template).render
+    %link{:rel => "stylesheet", :type => "text/css", :href => "#{$base_url}/stylesheets/index.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "#{$base_url}/stylesheets/ionicons.min.css"}
+  %body
+    = Haml::Engine.new(header_template).render
+    .first-view.section
+      .wrap.container
+        .columns.large-6.large-offset-6
+          %h1.slogan 我们是全球领先的空间数据技术平台提供商与运营商，深度专注于旅游行业垂直需求，伴您轻松玩转智慧旅游！
+          %a.button.radius.download{:href => "#{$base_url}/products/banlv.html"}
+            %span.download-icon
+            下载伴旅
+    .products-container.section.wrap
+      %h3.section-title 产品介绍
+      .banlv-app.product-item
+        .row
+          .content.medium-5
+            %h2.title 伴旅APP
+            %p  移动应用融合实时定位、近场社交、虚拟现实多样功能，带给你无与伦比的游时体验。
+            %a.detail-link{:href => "#{$base_url}/products/banlv.html"}
+              %span 详情
+          .model.medium-7{:src => "#{$base_url}/img/home-banlv-app.jpg"}
+      .business-intelligence.product-item
+        .row
+          .model.medium-7{:src => "#{$base_url}/img/home-bi.jpg"}
+          .medium-5.content
+            %h2 商业智能系统
+            %p  精准的数据挖掘铸就个性化的管理服务，全线增值的旅游产品成就行业管理者的梦想。
+            %a.detail-link{:href => "#{$base_url}/products/bi.html"}
+              %span 详情
+      .lbs-solutions.product-item
+        .row
+          .content.medium-5
+            %h2.title LBS 活动解决方案
+            %p  O2O连接线下丰富的主题活动资源与线上全方位的技术展现形式，提升市场热度，创立共赢平台。
+            %a.detail-link{:href => "#{$base_url}/products/lbs.html"}
+              %span 详情
+          .model.medium-7{:src => "#{$base_url}/img/home-lbs.jpg"}
+    .coorperates.section
+      .wrap
+        %h3.section-title 合作企业
+        .scenics.row
+          .scenic.columns.medium-6
+            %a.coorperator.szww-logo.button.radius.scenic-content{:href => "http://www.szwwco.com/"}
+          .scenic.columns.medium-6
+            %a.coorperator.zhosr-logo.button.radius.scenic-content{:href => "http://www.osrzh.com/"}
+    .contact.section
+      .map
+        #mapContainer
+        .wrap
+          %ul.contact-info
+            %li.email
+              %i.icon.ion-ios-email< 
+              &nbsp;<a href="mailto:caochen@xjimi.com">caochen@xjimi.com</a>
+            %li.telephone
+              %i.icon.ion-ios-telephone< 
+              &nbsp;<a href="tel:+86075586028119">0755-86028119</a>
+            %li.address
+              %i.icon.ion-ios-location< 
+              &nbsp;广东省深圳市南山区 <br/> &nbsp;&nbsp;&nbsp;&nbsp;深南花园裙楼B座416
+    = Haml::Engine.new(contact_form_template).render
+    = Haml::Engine.new(footer_template).render
+    %script{:src => "http://webapi.amap.com/maps?v=1.3&key=182136788463a9b069a0b92b347c712a"}
+    %script{:type => "text/javascript", :src => "#{$base_url}/js/index.js"}

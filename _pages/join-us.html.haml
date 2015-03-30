@@ -1,0 +1,197 @@
+- head_template =  File.read('./_includes/head.html.haml')
+- header_template =  File.read('./_includes/header.html.haml')
+- footer_template =  File.read('./_includes/footer.html.haml')
+- contact_form_template = File.read('./_includes/contact-form.html.haml')
+
+<!DOCTYPE html>
+%html
+  %head
+    = Haml::Engine.new(head_template).render
+    %link{:rel => "stylesheet", :type => "text/css", :href => "#{$base_url}/stylesheets/join-us.css"}
+  %body
+    = Haml::Engine.new(header_template).render
+    .first-view
+    .main.wrap{}
+      %h4.section-title 招聘信息
+      %ul.tabs.vertical#main-tab{:"data-tab" => ""}
+        %li.tab-title.active
+          %a{:href => "#panel1"} 招聘职位
+        %li.tab-title
+          %a{:href => "#panel2"} 实习机会
+        %li.tab-title
+          %a{:href => "#panel3"} 应聘流程
+      .tabs-content.recruitment-details
+        .content.active#panel1
+          %ul.tabs#fte-tab{:"data-tab" => ""}
+            %li.tab-title.active
+              %a.two-line{:href => "#panel11"} iOS<br/>开发工程师
+            %li.tab-title
+              %a.two-line{:href => "#panel12"} Android<br/>开发工程师
+            %li.tab-title
+              %a{:href => "#panel13"} 视觉设计师
+            %li.tab-title
+              %a.two-line{:href => "#panel14"} 前端<br/>开发工程师
+            %li.tab-title
+              %a{:href => "#panel15"} 产品经理
+          .tabs-content
+            .content.active#panel11
+              %h4 工作地点
+              %p 深圳南山区
+              %h4 薪水待遇
+              %p 面议
+              %h4 工作内容
+              %ul
+                %li 参与iOS应用系统的开发、编码以及单元测试工作；
+                %li 参与iOS应用系统开发过程中产出文档的编写；
+                %li 进行iOS验证和和修正测试中发现的问题；
+                %li 对 iOS 平台开发技术进行研究, 根据开发过程中的体验对产品提出改进建议；
+                %li 根据项目进展，辅助进行实地测试。
+              %h4 职位要求
+              %ul
+                %li 大专及以上学历（在校本科、研究生学生），计算机及相关专业优先，有开发经验者优先；
+                %li 有志于从事移动互联网应用开发, 对基于位置服务（LBS）感兴趣；
+                %li 有一定的Objective-C/SWIFT编程基础，熟悉iOS平台的各类开发工具，了解C/C++程序设计开发与调试；
+                %li 对终端产品的UI/UE及整体架构有独到的见解与认识，追求良好的用户体验；
+                %li 勇于创新，工作积极主动，具有良好的团队合作意识，综合素质较高,具有较强的逻辑思维能力和良好学习沟通能力；
+            .content#panel12
+              %h4 工作地点
+              %p 深圳南山区
+              %h4 薪水待遇
+              %p 面议
+              %h4 工作内容
+              %ul
+                %li 参与Android应用系统的开发、编码以及单元测试工作；
+                %li 参与Android应用系统开发过程中产出文档的编写；
+                %li 进行Android验证和和修正测试中发现的问题；
+                %li 对Android平台开发技术进行研究, 根据开发过程中的体验对产品提出改进建议。
+                %li 根据项目进展，辅助进行实地测试
+              %h4 职位要求
+              %ul
+                %li 大专及以上学历（在校本科、研究生学生），计算机及相关专业优先，有开发经验者优先；
+                %li 有志于从事移动互联网应用开发, 对基于位置服务（LBS）感兴趣；
+                %li 有一定的Java编程基础，熟悉Android平台的各类开发工具（如Android Studio），了解Java程序设计开发与调试；
+                %li 对终端产品的UI/UE及整体架构有独到的见解与认识，追求良好的用户体验；
+                %li 勇于创新，工作积极主动，具有良好的团队合作意识，综合素质较高,具有较强的逻辑思维能力和良好学习沟通能力；
+            .content#panel13
+              %h4 工作地点
+              %p 深圳南山区
+              %h4 薪水待遇
+              %p 面议
+              %h4 工作内容
+              %ul
+                %li 负责网站及产品页面的整体美术创意及设计；
+                %li 负责公司产品界面的设计（包括：PC端界面、Web网页、手机界面，IPAD界面）；
+                %li 负责网站专题、公司广告、宣传BANNER等设计工作；
+              %h4 职位要求
+              %ul
+                %li 设计、美术类相关专业大专以上学历；
+                %li 3年以上界面视觉设计经验，具有大型PC客户端、Web页面、手机客户端软件产品界面设计经验；
+                %li 参与产品前期界面视觉用户研究、设计流行趋势分析，设定产品界面视觉风格定义；
+                %li 精通Photoshop、Illustrator、Flash；掌握Coreldraw、3Dmax、Dreamweaver等软件;良好的手绘能力；
+                %li 认真细致，富于创新；对视觉设计有敏锐的观察力及分析能力；拥有丰富的设计理论知识和对流行趋势敏锐的洞察力；
+                %li 优秀的沟通及表达能力，优秀的团队合作能力；充满激情，关注细节；
+                %li （加分项）有在线个人作品集。
+            .content#panel14
+              %h4 工作地点
+              %p 深圳南山区
+              %h4 薪水待遇
+              %p 面议
+              %h4 工作内容
+              %ul
+                %li 维护和开发公司BI项目的WEB端页面;
+                %li 数据可视化开发和优化
+              %h4 职位要求
+              %ul
+                %li 精通CSS3/JQuery等技术，熟悉HTML5，有HTML5实际项目开发经验者加分；
+                %li 精通JavaScript/Ajax等Web开发技术；
+                %li 精通HTML/CSS网页制作技术，熟悉页面架构和布局；
+                %li 爱思考，沟通能力强；
+                %li （加分项）了解并使用过d3js, InfoVis或者其他基于Web形式的数据可视化开发库；
+                %li （加分项）熟悉Python5。
+            .content#panel15
+              %h4 工作地点
+              %p 深圳南山区
+              %h4 薪水待遇
+              %p 面议
+              %h4 工作内容
+              %ul
+                %li 负责公司的产品设计（PC端和移动端），完善产品内容与用户体验，跟进项目的进度和质量；
+                %li 基于市场预测、竞争分析及用户研究，确定产品定位、规划及路线图；
+                %li 根据用户行为调查与分析，改善产品功能与用户体验；
+                %li 带领设计团队完成设计工作；
+                %li 跟进产品开发的进度和质量。
+              %h4 职位要求
+              %ul
+                %li 本科及以上学历，2年以上互联网及移动互联网产品策划/实施相关经验；
+                %li 对P2P、O2O等互联网模式有较深刻的理解；
+                %li 对旅游/在线旅游行业有基本的了解；
+                %li 具备团队管理能力和优秀的执行力；
+                %li 有在线旅游、网络社交、电子商务等互联网产品经验者优先；
+                %li 开发过较大型APP产品者优先；
+                %li （加分项）有知名互联网公司任职经验。
+        .content#panel2
+          %ul.tabs#intern-tab{:"data-tab" => ""}
+            %li.tab-title.active
+              %a.two-line{:href => "#panel21"} iOS<br/>开发实习生
+            %li.tab-title
+              %a.two-line{:href => "#panel22"} Android<br/>开发实习生
+          .tabs-content
+            .content.active#panel21
+              %h4 工作地点
+              %p 深圳南山区
+              %h4 薪水待遇
+              %p 面议
+              %h4 工作内容
+              %ul
+                %li 参与 iOS 应用系统的开发、编码以及单元测试工作；
+                %li 参与 iOS 应用系统开发过程中产出文档的编写；
+                %li 进行 iOS 验证和和修正测试中发现的问题；
+                %li 对 iOS 平台开发技术进行研究, 根据开发过程中的体验对产品提出改进建议；
+                %li 根据项目进展，辅助进行实地测试。
+              %h4 职位要求
+              %ul
+                %li 大专及以上学历（在校本科、研究生学生），计算机及相关专业优先，有开发经验者优先；
+                %li 有志于从事移动互联网应用开发, 对基于位置服务（LBS）感兴趣；
+                %li 有一定的Objective-C/SWIFT编程基础，熟悉iOS平台的各类开发工具，了解C/C++程序设计开发与调试；
+                %li 对终端产品的UI/UE及整体架构有独到的见解与认识，追求良好的用户体验；
+                %li 勇于创新，工作积极主动，具有良好的团队合作意识，综合素质较高,具有较强的逻辑思维能力和良好学习沟通能力；
+                %li 实习期3个月，视工作情况延长或缩短；
+                %li 具有灵活的工作时间，每周需保证4天及以上工作时间。
+            .content#panel22
+              %h4 工作地点
+              %p 深圳南山区
+              %h4 薪水待遇
+              %p 面议
+              %h4 工作内容
+              %ul
+                %li 参与Android应用系统的开发、编码以及单元测试工作；
+                %li 参与Android应用系统开发过程中产出文档的编写；
+                %li 进行Android验证和和修正测试中发现的问题；
+                %li 对Android平台开发技术进行研究, 根据开发过程中的体验对产品提出改进建议；
+                %li 根据项目进展，辅助进行实地测试。
+              %h4 职位要求
+              %ul
+                %li 大专及以上学历（在校本科、研究生学生），计算机及相关专业优先，2015年应届生及有开发经验者优先；
+                %li 有志于从事移动互联网应用开发, 对基于位置服务（LBS）感兴趣；
+                %li 有一定的Java编程基础，熟悉Android平台的各类开发工具（如Android Studio），了解Java程序设计开发与调试；
+                %li 对终端产品的UI/UE及整体架构有独到的见解与认识，追求良好的用户体验；
+                %li 勇于创新，工作积极主动，具有良好的团队合作意识，综合素质较高,具有较强的逻辑思维能力和良好学习沟通能力；
+                %li 实习期3个月，视工作情况延长或缩短；
+                %li 具有灵活的工作时间，每周需保证4天及以上工作时间。
+        .content#panel3
+          .recruitment-process{:src => "#{$base_url}"}
+            %ul.small-block-grid-3.first-line
+              %li 您的简历
+              %li 邮件标题及文档名称<br/>姓名+学校+专业+职位<br/>发送至<br/><a href="mailto:caochen@xjimi.com">caochen@xjimi.com</a>
+              %li 初审
+            %ul.small-block-grid-3.second-line
+              %li 现场面试
+              %li 电话面试<br/>时长约30mins
+              %li 确定电话面试时间
+            %ul.small-block-grid-3.third-line
+              %li 
+              %li 通过面试<br/>收到offer
+              %li 
+    = Haml::Engine.new(contact_form_template).render
+    = Haml::Engine.new(footer_template).render
+    %script{:type => "text/javascript", :src => "#{$base_url}/js/join-us.js"}

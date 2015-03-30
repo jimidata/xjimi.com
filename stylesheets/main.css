@@ -1,0 +1,288 @@
+@charset "UTF-8";
+/* Custom CSS
+ * --------------------------------------- */
+/* line 8, ../scss/main.scss */
+body {
+  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "冬青黑体", "Microsoft YaHei", "微软雅黑", Arial;
+}
+
+/* line 11, ../scss/main.scss */
+h1, h2, h3, h4, h5, h6, p, i {
+  font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", "冬青黑体", "Microsoft YaHei", "微软雅黑", Arial;
+  color: #222;
+}
+
+/* line 16, ../scss/main.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #2cbf4d;
+}
+
+/* line 20, ../scss/main.scss */
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 960px;
+}
+
+/* line 26, ../scss/main.scss */
+.radius {
+  border-radius: 4px;
+}
+
+/* Header Css
+ *  --------------------------------------- */
+/* line 32, ../scss/main.scss */
+#header {
+  position: fixed;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(234, 234, 234, 0.8);
+  height: 120px;
+  box-shadow: 0px 2px 2px #888;
+}
+/* line 42, ../scss/main.scss */
+#header * {
+  font-family: Helvetica, "Microsoft YaHei", "微软雅黑", STHeiti, Arial;
+}
+/* line 46, ../scss/main.scss */
+#header .wrap {
+  height: 100%;
+}
+/* line 50, ../scss/main.scss */
+#header nav {
+  padding: 0;
+  position: absolute;
+  bottom: 12px;
+}
+/* line 56, ../scss/main.scss */
+#header nav.left {
+  left: 0;
+}
+/* line 60, ../scss/main.scss */
+#header nav.right {
+  right: 0;
+}
+/* line 64, ../scss/main.scss */
+#header nav .button:hover {
+  color: #fff;
+}
+/* line 68, ../scss/main.scss */
+#header nav .nav-item {
+  color: #2dcca9;
+  font-weight: 400;
+  margin: 0;
+  font-size: 1.4em;
+  padding: 0 1.6rem;
+}
+/* line 77, ../scss/main.scss */
+#header .dropdown.button::after {
+  border: 0px;
+}
+/* line 81, ../scss/main.scss */
+#header .dropdown span {
+  display: inline-block;
+  content: "";
+  vertical-align: middle;
+  margin-left: 4px;
+  border: 6px solid;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+}
+
+/* line 93, ../scss/main.scss */
+#products-drop:before, #products-drop:after {
+  left: 74px;
+}
+
+/* line 96, ../scss/main.scss */
+#products-drop {
+  width: 160px;
+  margin-top: 0;
+}
+/* line 100, ../scss/main.scss */
+#products-drop li a {
+  padding: 0;
+  margin: 0;
+  color: #2dcca9;
+  background-color: rgba(234, 234, 224, 0.8);
+  line-height: 40px;
+}
+
+/* line 109, ../scss/main.scss */
+.jimi-logo {
+  display: block;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 40%;
+  background: url(/img/logo.png) no-repeat center;
+  background-size: auto 100%;
+  position: relative;
+}
+/* line 118, ../scss/main.scss */
+.jimi-logo .bottom-words {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  font-size: 170%;
+  margin-left: -50px;
+  color: #2dcca9;
+}
+/* line 127, ../scss/main.scss */
+.jimi-logo .jimi {
+  visibility: hidden;
+}
+
+/* line 132, ../scss/main.scss */
+body {
+  padding-top: 120px;
+}
+
+/* Main Css
+ *  --------------------------------------- */
+/* line 138, ../scss/main.scss */
+.main {
+  width: 100%;
+}
+
+/* line 142, ../scss/main.scss */
+.first-view {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  background-color: #f3f2ea;
+  background-size: cover;
+  background-position: center;
+}
+
+/* line 152, ../scss/main.scss */
+.first-view:after {
+  clear: both;
+  content: " ";
+  width: 100%;
+  height: 5px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: url(/img/four-colors-line.png) no-repeat center;
+  background-size: 100% 100%;
+}
+
+/* Footer Css
+ * ----------------------------------------- */
+/* line 166, ../scss/main.scss */
+#footer {
+  height: 60px;
+  width: 100%;
+  background-color: #ddd;
+  overflow: hidden;
+}
+
+/* line 173, ../scss/main.scss */
+#footer a, #footer p {
+  color: #777;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* line 179, ../scss/main.scss */
+#footer .copyright {
+  margin-top: 10px;
+  margin-bottom: 2px;
+}
+
+/* line 184, ../scss/main.scss */
+#footer ul a {
+  line-height: 60px;
+  padding: 0 20px;
+}
+
+/* line 189, ../scss/main.scss */
+#footer li {
+  display: inline-block;
+  margin: 0;
+}
+
+/* line 194, ../scss/main.scss */
+#footer li.has-next:after {
+  color: #777;
+  content: "|";
+}
+
+/* line 199, ../scss/main.scss */
+.social img {
+  border-radius: 4px;
+}
+
+/* line 203, ../scss/main.scss */
+.contact-about {
+  position: relative;
+  background-color: #dbd9da;
+  padding-bottom: 20px;
+}
+
+/* line 209, ../scss/main.scss */
+.contact-about:before {
+  content: "";
+  background-color: gray;
+  position: absolute;
+  top: 0;
+  height: 5px;
+  width: 100%;
+}
+
+/* line 218, ../scss/main.scss */
+.contact-about:after {
+  content: "";
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+}
+
+/* line 227, ../scss/main.scss */
+.submit {
+  margin-right: 16px;
+  padding: 10px 30px;
+  background-color: gray;
+}
+
+/* line 233, ../scss/main.scss */
+.section-title {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+
+/* line 239, ../scss/main.scss */
+.about-us {
+  padding-left: 80px;
+}
+
+/* line 243, ../scss/main.scss */
+.about-us ul {
+  margin-left: 0;
+  list-style-type: none;
+}
+
+/* line 248, ../scss/main.scss */
+.sub-section-title {
+  color: black;
+  text-align: left;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* line 255, ../scss/main.scss */
+.model {
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin: 0 auto;
+  background: transparent no-repeat center;
+  background-size: contain;
+}

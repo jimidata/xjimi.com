@@ -1,0 +1,184 @@
+@import  "main";
+
+$header-max-width: 120px;
+
+img {
+    max-width: none; // to fix the amap issue
+}
+
+body {
+    padding-top: $header-max-width !important;
+}
+
+.first-view {
+    background-image: url("#{$base_url}/img/home-banner.jpg");
+}
+
+.first-view .container {
+    margin-top: 80px;
+}
+
+.slogan {
+    margin-top: 80px;
+    font-size: 18pt;
+    text-align: left;
+    padding: 0;
+    color: white;
+}
+
+.download i {
+    font-size: 140%;
+}
+
+.download {
+    background-color: white;
+    float: right;
+    margin-top: 40px;
+    margin-right: 16px;
+    color: $theme-color;
+    padding: 10px 30px;
+}
+
+.download-icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    background: url("#{$base_url}/img/home-download-icon.png") no-repeat center;
+    background-size: contain;
+}
+
+.download:hover {
+    color: #1cbf0d;
+}
+
+.product-item {
+    position: relative;
+    height: 480px;
+
+    > * {
+        height: 100%;
+    }
+}
+
+.product-item .wrap {
+    padding-top: 100px;
+}
+
+.product-item .row >:last-child {
+    margin-left: -10px;
+}
+
+.product-item .content {
+    padding: 30px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.product-item h2 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.product-item p {
+    text-align: center;
+}
+
+.product-item .detail-link {
+    display: block;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+    color: #8bf;
+}
+
+.product-item .detail-link:hover {
+    color: #09c;
+}
+
+.banlv-app .model {
+    background-image: url("#{$base_url}/img/home-banlv-app.jpg");
+}
+
+.business-intelligence .model {
+    background-image: url("#{$base_url}/img/home-bi.jpg");
+}
+
+.lbs-solutions .model {
+    background-image: url("#{$base_url}/img/home-lbs.jpg");
+}
+
+/* Coorperates Css
+ *  --------------------------------- */
+.coorperates {
+    padding: 20px 0;
+}
+
+.scenics {
+    margin: 40px 0px;
+}
+
+.scenic-content {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+}
+
+.scenic-content:hover {
+    background-color: transparent;
+}
+
+.coorperator {
+    background-color: white;
+    border: 2px solid gray;
+}
+
+.szww-logo {
+    background: url(#{$base_url}/img/coorperates/SZWW.png) no-repeat center;
+}
+
+.zhosr-logo {
+    background: url(#{$base_url}/img/coorperates/OSR.png) no-repeat center;
+}
+
+.map {
+    margin-top: 40px;
+    position: relative;
+
+    .contact-info {
+        position: absolute;
+        top: -420px;
+        left: 35px;
+        height: 260px;
+        width: 260px;
+        border-radius: 260px;
+        background-color: $theme-color;
+        opacity: 0.8;
+
+        a {
+            color: black;
+        }
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 45px;
+        padding-top: 45px;
+    }
+
+    li {
+        margin-top: 20px;
+        color: black;
+    }
+
+    i {
+        font-size: 20px;
+        color: white;
+    }
+}
+
+
+#mapContainer {
+    width: 100%;
+    height: 350px;
+}

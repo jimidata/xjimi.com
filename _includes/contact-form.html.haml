@@ -1,0 +1,25 @@
+.contact-about
+  .wrap.row
+    .contact-form.columns.medium-9
+      %h4.sub-section-title 联系我们
+      %p 我们热切诚恳地与您合作，如果您想了解我们是如何将数据转化为收益，请通过以下方式联系我们：
+      %form.row{:action => "mailto:caochen@xjimi.com?subject=contact from www.xjimi.com", :method => "post"}
+        .columns.medium-6
+          邮箱:
+          %input.radius{:type => "text", :name => "email"}
+        .columns.medium-6
+          姓名:
+          %input.radius{:type => "text", :name => "name"}
+        .columns.medium-6
+          公司名称:
+          %input.radius{:type => "text", :name => "company"}
+        .columns.medium-6
+          职业:
+          %input.radius{:type => "text", :name => "job"}
+        %input.right.button.radius.submit{:type => "submit", :value => "发送"}
+    .about-us.columns.medium-3
+      %h4.sub-section-title 关于
+      %ul
+        %li 团队
+        %li 咨询
+        %li 投资

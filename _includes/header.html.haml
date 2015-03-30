@@ -1,0 +1,23 @@
+#header
+  .wrap.row
+    %a.jimi-logo.small-4.medium-4{:href => "http://www.xjimi.com", :title => "XJIMI"}
+      .bottom-words
+        %span.jimi 极觅
+        %span.data 数据
+    %nav.left.columns.small-4.medium-4
+      %span
+        %a#nav-products.button.dropdown.left.nav-item{:href => "#", :"data-dropdown" => "products-drop", :"data-options" => "is_hover:true; hover_timeout:2000", :"aria-expanded" => "false"}<
+          产品
+          %span
+        %ul#products-drop.f-dropdown{:"data-dropdown-content" => "", :"aria-hidden" => "true"}
+          %li
+            %a.button{:href => "#{$base_url}/products/banlv.html"} 伴旅APP
+            %a.button{:href => "#{$base_url}/products/bi.html"} BI管理端
+            %a.button{:href => "#{$base_url}/products/lbs.html"} LBS活动
+      %span
+        %a#nav-coorperates.button.left.nav-item{:href => "#{$base_url}/coorperates.html"} 景区加盟
+    %nav.right.columns.small-4.medium-4
+      %span
+        %a#nav-joinus.button.right.nav-item{:href => "#{$base_url}/join-us.html"} 加入我们
+      %span
+        %a#nav-team.button.right.nav-item{:href => "#{$base_url}/team.html"} 关于

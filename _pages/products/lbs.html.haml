@@ -1,0 +1,44 @@
+- head_template =  File.read('./_includes/head.html.haml')
+- header_template =  File.read('./_includes/header.html.haml')
+- footer_template =  File.read('./_includes/footer.html.haml')
+- contact_form_template = File.read('./_includes/contact-form.html.haml')
+
+<!DOCTYPE html>
+%html
+  %head
+    = Haml::Engine.new(head_template).render
+    %link{:rel => "stylesheet", :type => "text/css", :href => "#{$base_url}/stylesheets/products.css"}
+    %link{:rel => "stylesheet", :type => "text/css", :href => "#{$base_url}/stylesheets/ionicons.min.css"}
+  %body.lbs
+    = Haml::Engine.new(header_template).render
+    .section
+      .first-view
+        .wrap
+          .container
+            %h1 LBS 活动解决方案
+            %p LBS 活动解决方案涉及商场、展馆、会议、旅游、 餐饮、广告媒介等多行业
+    .section.activities
+      .wrap.row.feature
+        .medium-4.content
+          %h2 LBS活动策划
+          %p 连接优质匹配的景区资源 <br/> 为线下活动打开市场大门
+        .model.medium-8
+    .section.online-promote
+      .wrap.row.feature
+        .model.medium-8
+        .medium-4.content
+          %h2 线上推广实现
+          %p 借助平台的线上资源与技术实现活动 <br/> 的迅速推广，形成品牌效应。
+    .section.hot-scenic
+      .wrap.row.feature
+        .medium-4.content
+          %h2 景区热度上升
+          %p 结合线上用户流量与线下活动资源 <br/> 带动景区人气，扩大盈利空间。
+        .model.medium-8
+    = Haml::Engine.new(contact_form_template).render
+    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.js"}
+    = Haml::Engine.new(footer_template).render
+    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.easings.min.js"}
+    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.slimscroll.min.js"}
+    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.fullPage.min.js"}
+    %script{:type => "text/javascript", :src => "#{$base_url}/js/products.js"}

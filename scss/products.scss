@@ -1,0 +1,209 @@
+@import "main";
+
+.feature {
+    height: 100%;
+
+    .content {
+        padding: 20px;
+    }
+
+    h2 {
+        color: #0a0a0a;
+    }
+    p {
+        color: #2b2b2b;
+    }
+
+    >* {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    :last-child {
+        margin-left: -10px;
+    }
+}
+
+.section {
+    height: 500px;
+
+    h1, h2, p {
+        text-align: center;
+    }
+}
+
+.first-view {
+    height: 100%;
+
+    * {
+        color: white;
+    }
+
+    >* {
+        height: 100%;
+    }
+}
+
+.app .first-view {
+    background-image: url(#{$base-url}/img/products/app-banner.jpg);
+}
+
+.lbs .first-view {
+    background-image: url(#{$base-url}/img/products/lbs-banner.jpg);
+}
+
+.bi .first-view {
+    background-image: url(#{$base-url}/img/products/bi-banner.jpg);
+}
+
+.scenic-information {
+    // background: url("#{$base_url}/img/products/app-bg-left-top.jpg") white no-repeat;
+    // background-size: cover;
+    // background-position: left bottom;
+    
+    .model {
+        background-image: url("#{$base_url}/img/products/app-scenic.jpg");
+    }
+}
+
+.lbs-game {
+    // background: url("#{$base_url}/img/products/app-bg-left-top-1.jpg") white no-repeat;
+    // background-size: cover;
+    // background-position: left top;
+
+    .model {
+        background-image: url("#{$base_url}/img/products/app-games.jpg");
+        background-position: left center;
+    }
+}
+
+.social .model {
+    background-image: url("#{$base_url}/img/products/app-social.jpg");
+}
+
+.voice-intro .model {
+    background-image: url("#{$base_url}/img/products/app-voice.jpg");
+    background-position: left center;
+}
+
+.sharing {
+    //background: url("#{$base_url}/img/products/app-bg-right-bottom.jpg") white no-repeat;
+    // background-size: cover;
+    // background-position: right bottom;
+
+    .model {
+        background-image: url("#{$base_url}/img/products/app-sharing.jpg");
+    }
+}
+
+.online-manage .model {
+    background-image: url("#{$base_url}/img/products/bi-online-manage.jpg");
+}
+
+.push-notification .model {
+    background-image: url("#{$base_url}/img/products/bi-push.jpg");
+}
+
+.track .model {
+    background-image: url("#{$base_url}/img/products/bi-track.jpg");
+}
+
+.data-mining .model {
+    background-image: url("#{$base_url}/img/products/bi-data-mining.jpg");
+}
+
+.ugc .model {
+    background-image: url("#{$base_url}/img/products/bi-ugc.jpg");
+}
+
+.activities .model {
+    background-image: url("#{$base_url}/img/products/lbs-activities.jpg");
+}
+
+.online-promote .model {
+    background-image: url("#{$base_url}/img/products/lbs-online-promote.png");
+}
+
+.hot-scenic .model {
+    background-image: url("#{$base_url}/img/products/lbs-hot.png");
+}
+
+.first-view .container {
+    position: absolute;
+}
+
+.app .first-view .container {
+    left: 50%;
+    margin-left: -270px;
+    bottom: 60px;
+    width: 540px;
+}
+
+.lbs .first-view .container {
+    padding: 10px 20px;
+    max-width: 50%;
+    top: 50%;
+    margin-top: -100px;
+    right: 40px;
+    background-color: rgba(240, 240, 240, 0.8);
+    border-radius: 5px;
+
+    * {
+        color: $theme-color;
+        text-align: left;
+    }
+
+    p::before {
+        border: 1px $theme-color solid;
+        width: 100%;
+    }
+}
+
+.scenic-radios {
+    margin-left: 0;
+
+    input[type="radio"] {
+        display: none;
+    }
+    
+    label {
+        margin-top: 20px;
+    }
+
+    label:last-child {
+        margin-top: 32px;
+    }
+
+    label:before {
+        content: "";
+        width: 0;
+        height: 0;
+        padding:0 9px;
+        border: 2px white solid;
+        border-radius: 20px;
+        margin-right: 16px;
+    }
+
+    input[type="radio"]:checked + label:before {
+        background-color: $theme-color;
+    }
+}
+
+.store-icon {
+    display: inline-block;
+    width: 135px;
+    height: 40px;
+    margin: 8px 0;
+}
+
+.ios {
+    background: url(#{$base-url}/img/icons/App_Store_Badge_135x40.svg) transparent no-repeat;
+}
+.android {
+    background: url(#{$base-url}/img/icons/Android_135x40.png) transparent no-repeat;
+}
+.qrcode {
+    width: 100px;
+    height: 100px;
+    margin: 8px 20px;
+}
