@@ -43,9 +43,5 @@
           %p 管理用户创建和分享的信息 <br/> 掌控线上生态系统和问题预警
         .model.medium-8
     = Haml::Engine.new(contact_form_template).render
-    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.js"}
     = Haml::Engine.new(footer_template).render
-    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.easings.min.js"}
-    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.slimscroll.min.js"}
-    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.fullPage.min.js"}
     %script{:type => "text/javascript", :src => "#{$base_url}/js/products.js"}

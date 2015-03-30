@@ -36,9 +36,5 @@
           %p 结合线上用户流量与线下活动资源 <br/> 带动景区人气，扩大盈利空间。
         .model.medium-8
     = Haml::Engine.new(contact_form_template).render
-    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.js"}
     = Haml::Engine.new(footer_template).render
-    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.easings.min.js"}
-    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.slimscroll.min.js"}
-    %script{:type => "text/javascript", :src => "#{$base_url}/js/vendors/jquery.fullPage.min.js"}
     %script{:type => "text/javascript", :src => "#{$base_url}/js/products.js"}
