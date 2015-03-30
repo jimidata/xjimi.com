@@ -289,25 +289,29 @@ body {
 
 /* line 3, ../scss/team.scss */
 .first-view {
-  height: 430px;
+  height: 500px;
 }
 
-/* line 8, ../scss/team.scss */
-.bxslider li:first-child {
-  background-color: #1570db;
+/* line 9, ../scss/team.scss */
+.bxslider .slider-bg {
+  margin: 0 auto;
 }
-/* line 12, ../scss/team.scss */
-.bxslider .caption {
-  position: absolute;
-  bottom: 120px;
-  width: 100%;
+/* line 13, ../scss/team.scss */
+.bxslider li {
+  background: white;
 }
 /* line 17, ../scss/team.scss */
+.bxslider .caption {
+  position: absolute;
+  bottom: 160px;
+  width: 100%;
+}
+/* line 22, ../scss/team.scss */
 .bxslider .caption .title {
   margin: 0 auto;
   text-align: center;
 }
-/* line 22, ../scss/team.scss */
+/* line 27, ../scss/team.scss */
 .bxslider .caption .details {
   margin: 10px auto;
   padding: 8px;
@@ -317,31 +321,31 @@ body {
   max-width: 60%;
 }
 
-/* line 33, ../scss/team.scss */
+/* line 38, ../scss/team.scss */
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active {
   background-color: white;
 }
 
-/* line 37, ../scss/team.scss */
+/* line 42, ../scss/team.scss */
 .bx-wrapper .bx-controls {
   position: absolute;
   width: 100%;
   height: 40px;
-  bottom: 40px;
+  bottom: 83px;
 }
 
-/* line 44, ../scss/team.scss */
+/* line 49, ../scss/team.scss */
 ul.members {
   list-style: none;
   margin: 0;
 }
 
-/* line 49, ../scss/team.scss */
+/* line 54, ../scss/team.scss */
 li.member {
   margin: 20px auto 40px;
 }
 
-/* line 53, ../scss/team.scss */
+/* line 58, ../scss/team.scss */
 .avatar {
   display: block;
   width: 80px;
@@ -352,16 +356,16 @@ li.member {
   overflow: hidden;
 }
 
-/* line 64, ../scss/team.scss */
+/* line 69, ../scss/team.scss */
 .member .title {
   margin: 6px auto;
   text-align: center;
 }
-/* line 68, ../scss/team.scss */
+/* line 73, ../scss/team.scss */
 .member .title .name {
   font-size: 26px;
 }
-/* line 72, ../scss/team.scss */
+/* line 77, ../scss/team.scss */
 .member .detail {
   text-indent: 2em;
   padding: 4px 16px;
