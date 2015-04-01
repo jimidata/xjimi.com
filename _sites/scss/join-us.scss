@@ -9,12 +9,18 @@
     background-image: url(#{$base_url}/img/join-us-banner.jpg);
 }
 
+body {
+    min-width: 960px;
+}
+
 .section-title {
     text-align: left;
 }
 
 .tabs.vertical {
     width: 160px;
+    float: left;
+
     >.tab-title {
         margin-bottom: 10px !important;
 

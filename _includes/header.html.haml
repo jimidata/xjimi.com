@@ -1,23 +1,32 @@
 #header
   .wrap.row
-    %a.jimi-logo.small-4.medium-4{:href => "http://www.xjimi.com", :title => "XJIMI"}
-      .bottom-words
-        %span.jimi 极觅
-        %span.data 数据
-    %nav.left.columns.small-4.medium-4
-      %span
-        %a#nav-products.button.dropdown.left.nav-item{:href => "#", :"data-dropdown" => "products-drop", :"data-options" => "is_hover:true; hover_timeout:2000", :"aria-expanded" => "false"}<
-          产品
-          %span
-        %ul#products-drop.f-dropdown{:"data-dropdown-content" => "", :"aria-hidden" => "true"}
+    .logo
+      %a.small-6.medium-4.medium-offset-4{:href => "http://www.xjimi.com", :title => "XJIMI"}
+        .bottom-words
+          %span.jimi 极觅
+          %span.data 数据
+    %nav.top-bar{:"data-topbar" => "", "role" => "navigation"}
+      %ul.title-area
+        %li.name
+          %h1 xjimi
+        %li.toggle-topbar.menu-icon
+          %a{:href => ""}
+            %span
+      %section.top-bar-section
+        %ul.left
+          %li.has-dropdown
+            %a.nav-item 产品
+            %ul.dropdown
+              %li
+                %a.nav-item.second{:href => "#{$base_url}/products/banlv.html"} 伴旅APP
+              %li
+                %a.nav-item.second{:href => "#{$base_url}/products/bi.html"} BI管理端
+              %li
+                %a.nav-item.second{:href => "#{$base_url}/products/lbs.html"} LBS活动
           %li
-            %a.button{:href => "#{$base_url}/products/banlv.html"} 伴旅APP
-            %a.button{:href => "#{$base_url}/products/bi.html"} BI管理端
-            %a.button{:href => "#{$base_url}/products/lbs.html"} LBS活动
-      %span
-        %a#nav-coorperates.button.left.nav-item{:href => "#{$base_url}/coorperates.html"} 景区加盟
-    %nav.right.columns.small-4.medium-4
-      %span
-        %a#nav-joinus.button.right.nav-item{:href => "#{$base_url}/join-us.html"} 加入我们
-      %span
-        %a#nav-team.button.right.nav-item{:href => "#{$base_url}/team.html"} 关于
+            %a#nav-coorperates.nav-item{:href => "#{$base_url}/coorperates.html"} 景区加盟
+        %ul.right
+          %li
+            %a#nav-joinus.nav-item{:href => "#{$base_url}/join-us.html"} 加入我们
+          %li
+            %a#nav-team.nav-item{:href => "#{$base_url}/team.html"} 关于

@@ -2,6 +2,8 @@
 
 .feature {
     height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
 
     .content {
         padding: 20px;
@@ -56,87 +58,60 @@
     background-image: url(#{$base-url}/img/products/bi-banner.jpg);
 }
 
-.scenic-information {
-    // background: url("#{$base_url}/img/products/app-bg-left-top.jpg") white no-repeat;
-    // background-size: cover;
-    // background-position: left bottom;
-    
-    .model {
-        background-image: url("#{$base_url}/img/products/app-scenic.jpg");
-    }
+.scenic-information .feature {
+    background-image: url("#{$base_url}/img/products/app-scenic.jpg");
 }
 
-.lbs-game {
-    // background: url("#{$base_url}/img/products/app-bg-left-top-1.jpg") white no-repeat;
-    // background-size: cover;
-    // background-position: left top;
-
-    .model {
-        background-image: url("#{$base_url}/img/products/app-games.jpg");
-        background-position: left center;
-    }
+.lbs-game .feature {
+    background-image: url("#{$base_url}/img/products/app-games.jpg");
 }
 
-.social .model {
+.social .feature {
     background-image: url("#{$base_url}/img/products/app-social.jpg");
 }
 
-.voice-intro .model {
+.voice-intro .feature {
     background-image: url("#{$base_url}/img/products/app-voice.jpg");
-    background-position: left center;
 }
 
-.sharing {
-    //background: url("#{$base_url}/img/products/app-bg-right-bottom.jpg") white no-repeat;
-    // background-size: cover;
-    // background-position: right bottom;
-
-    .model {
-        background-image: url("#{$base_url}/img/products/app-sharing.jpg");
-    }
+.sharing .feature {
+    background-image: url("#{$base_url}/img/products/app-sharing.jpg");
 }
 
-.online-manage .model {
+.online-manage .feature {
     background-image: url("#{$base_url}/img/products/bi-online-manage.jpg");
 }
 
-.push-notification .model {
+.push-notification .feature {
     background-image: url("#{$base_url}/img/products/bi-push.jpg");
 }
 
-.track .model {
+.track .feature {
     background-image: url("#{$base_url}/img/products/bi-track.jpg");
 }
 
-.data-mining .model {
+.data-mining .feature {
     background-image: url("#{$base_url}/img/products/bi-data-mining.jpg");
 }
 
-.ugc .model {
+.ugc .feature {
     background-image: url("#{$base_url}/img/products/bi-ugc.jpg");
 }
 
-.activities .model {
+.activities .feature {
     background-image: url("#{$base_url}/img/products/lbs-activities.jpg");
 }
 
-.online-promote .model {
+.online-promote .feature {
     background-image: url("#{$base_url}/img/products/lbs-online-promote.png");
 }
 
-.hot-scenic .model {
+.hot-scenic .feature {
     background-image: url("#{$base_url}/img/products/lbs-hot.png");
 }
 
 .first-view .container {
     position: absolute;
-}
-
-.app .first-view .container {
-    left: 50%;
-    margin-left: -270px;
-    bottom: 60px;
-    width: 540px;
 }
 
 .lbs .first-view .container {
@@ -164,14 +139,6 @@
 
     input[type="radio"] {
         display: none;
-    }
-    
-    label {
-        margin-top: 20px;
-    }
-
-    label:last-child {
-        margin-top: 32px;
     }
 
     label:before {
@@ -206,4 +173,69 @@
     width: 100px;
     height: 100px;
     margin: 8px 20px;
+}
+
+
+/*
+ Medium CSS
+ --------------------------------------- */
+
+@media #{$medium-up} { 
+    .app .first-view .container {
+        left: 50%;
+        margin-left: -270px;
+        bottom: 60px;
+        width: 540px;
+    }
+
+    .radio-container.szww {
+        margin-top: 24px;
+    }
+
+    .radio-container.zhosr {
+        margin-top: 34px;
+    }
+
+    .section:nth-child(odd) .feature {
+        background-position: right center;
+    }
+
+    .section:nth-child(even) .feature {
+        background-position: left center;
+    }
+}
+
+/*
+ small CSS
+ --------------------------------------- */
+@media #{$small-only} { 
+    .radio-container {
+        display: inline-block;
+        margin: 12px;
+    }
+
+    .app .first-view .container {
+        width: auto;
+        margin: 20px 0;
+        left: 0;
+        bottom: 0;
+    }
+
+    .section {
+        height: auto;
+    }
+
+    .feature {
+        width: 300px;
+        background-position: center top;
+
+        .model {
+            height: 300px;
+        }
+
+        .content {
+            display: block;
+            margin-top: 0;
+        }
+    }
 }

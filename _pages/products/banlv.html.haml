@@ -18,11 +18,12 @@
             .columns.medium-6
               %h5 根据您的游玩地选择
               .scenic-radios
-                %input#szww-radio{:type => "radio", :name => "appname", :checked => "", :value => "szww"}
-                %label{:for => "szww-radio"} 深圳世界之窗
-                %br
-                %input#zhosr-radio{:type => "radio", :name => "appname", :value => "zhosr"}
-                %label{:for => "zhosr-radio"} 珠海海泉湾
+                .radio-container.szww
+                  %input#szww-radio{:type => "radio", :name => "appname", :checked => "", :value => "szww"}
+                  %label{:for => "szww-radio"} 深圳世界之窗
+                .radio-container.zhosr
+                  %input#zhosr-radio{:type => "radio", :name => "appname", :value => "zhosr"}
+                  %label{:for => "zhosr-radio"} 珠海海泉湾
             .columns.medium-6
               %h5 根据您的手机，选择下载
               .row
@@ -33,10 +34,10 @@
                   %img.qrcode{:src => "#{$base_url}/img/products/szww-qrcode.jpg"}
     .section.scenic-information
       .wrap.row.feature
+        .model
         .medium-4.content
           %h2 全景介绍
           %p 全方位了解景区资讯 <br /> 多角度呈现缤纷旅程
-        .model.medium-8
     .section.lbs-game
       .wrap.row.feature
         .model.medium-8
@@ -45,10 +46,10 @@
           %p 参与互动线上线下小游戏 <br /> 打开属于你的大礼盒！
     .section.social
       .wrap.row.feature
+        .model
         .medium-4.content
           %h2 近场社交
           %p 看看你的身边还有谁 <br /> 约还是不约你做主
-        .model.medium-8
     .section.voice-intro
       .wrap.row.feature
         .model.medium-8
@@ -57,10 +58,10 @@
           %p 全程语音讲解 <br /> 游览从未如此轻松
     .section.sharing
       .wrap.row.feature
+        .model
         .medium-4.content
           %h2 魅力分享
           %p 分享游时的点点滴滴 <br /> 秀出你的精彩每一刻
-        .model.medium-8
     = Haml::Engine.new(contact_form_template).render
     = Haml::Engine.new(footer_template).render
     %script{:type => "text/javascript", :src => "#{$base_url}/js/products.js"}

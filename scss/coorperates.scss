@@ -49,6 +49,7 @@
 
     .title, .details {
         color: white;
+        width: 100%;
     }
 }
 
@@ -89,3 +90,29 @@
 }
 
 //#f9ad4b #e4813e
+
+/*
+ Medium CSS
+ --------------------------------------- */
+@media #{$medium-up} { 
+    .section {
+        height: 420px;
+    }
+
+    .section:before {
+        height: 420px;
+    }
+}
+
+/*
+ small CSS
+ --------------------------------------- */
+@media #{$small-only} { 
+    .section {
+        height: 300px;
+    }
+
+    .section:before {
+        height: 300px;
+    }
+}

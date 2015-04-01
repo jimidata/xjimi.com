@@ -50,7 +50,7 @@ var cbpAnimatedHeader = (function() {
     var marker = new AMap.Marker({                 
         map: map, //将点添加到地图                 
         position: new AMap.LngLat(113.944518, 22.540736),                    
-        icon: "/img/callout.png",//marker图标，直接传递地址url                 
+        icon: base_url + "/img/callout.png",//marker图标，直接传递地址url                 
         offset:new AMap.Pixel(20, -40) //相对于基点的位置 
     });
 })(window);

@@ -13,44 +13,44 @@
     = Haml::Engine.new(header_template).render
     .first-view.section
       .wrap.container
-        .columns.large-6.large-offset-6
+        .columns.medium-6.medium-offset-6
           %h1.slogan 我们是全球领先的空间数据技术平台提供商与运营商，深度专注于旅游行业垂直需求，伴您轻松玩转智慧旅游！
           %a.button.radius.download{:href => "#{$base_url}/products/banlv.html"}
             %span.download-icon
             下载伴旅
     .products-container.section.wrap
       %h3.section-title 产品介绍
-      .banlv-app.product-item
-        .row
+      .banlv-app.product
+        .wrap.row.product-item
+          .model
           .content.medium-5
             %h2.title 伴旅APP
             %p  移动应用融合实时定位、近场社交、虚拟现实多样功能，带给你无与伦比的游时体验。
             %a.detail-link{:href => "#{$base_url}/products/banlv.html"}
               %span 详情
-          .model.medium-7{:src => "#{$base_url}/img/home-banlv-app.jpg"}
-      .business-intelligence.product-item
-        .row
-          .model.medium-7{:src => "#{$base_url}/img/home-bi.jpg"}
+      .business-intelligence.product
+        .wrap.row.product-item
+          .model.medium-7
           .medium-5.content
             %h2 商业智能系统
             %p  精准的数据挖掘铸就个性化的管理服务，全线增值的旅游产品成就行业管理者的梦想。
             %a.detail-link{:href => "#{$base_url}/products/bi.html"}
               %span 详情
-      .lbs-solutions.product-item
-        .row
-          .content.medium-5
+      .lbs-solutions.product
+        .wrap.row.product-item
+          .model
+          .content.medium-5.small-12
             %h2.title LBS 活动解决方案
             %p  O2O连接线下丰富的主题活动资源与线上全方位的技术展现形式，提升市场热度，创立共赢平台。
             %a.detail-link{:href => "#{$base_url}/products/lbs.html"}
               %span 详情
-          .model.medium-7{:src => "#{$base_url}/img/home-lbs.jpg"}
     .coorperates.section
       .wrap
         %h3.section-title 合作企业
         .scenics.row
-          .scenic.columns.medium-6
+          .scenic.columns.medium-6.small-12
             %a.coorperator.szww-logo.button.radius.scenic-content{:href => "http://www.szwwco.com/"}
-          .scenic.columns.medium-6
+          .scenic.columns.medium-6.small-12
             %a.coorperator.zhosr-logo.button.radius.scenic-content{:href => "http://www.osrzh.com/"}
     .contact.section
       .map

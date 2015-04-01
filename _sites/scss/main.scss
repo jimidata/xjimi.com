@@ -1,6 +1,8 @@
+@import "foundation/components/grid";
+
 $base-url: "";
 $theme-color: #2cbf4d;
-$header-width: 120px;
+$header-height: 120px;
 $header-color: #2dcca9;
 
 /* Custom CSS
@@ -36,7 +38,7 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     width: 100%;
     background-color: rgba(234, 234, 234, 0.8);
-    height: $header-width;
+    height: $header-height;
     box-shadow: 0px 2px 2px #888;
 
     * {
@@ -48,31 +50,27 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     nav {
-        padding: 0;
-        position: absolute;
-        bottom: 12px;
-    }
+        margin-top: $header-height - 43px;
 
-    nav.left {
-        left: 0;
-    }
+        .name h1 {
+            display: none;
+        }
+        .nav-item {
+            color: $header-color;
+            font-weight: 400;
+            margin: 0;
+            font-size: 1.4em;
+            padding: 0 1.6rem;
+        }
 
-    nav.right {
-        right: 0;
-    }
+        .nav-item:hover {
+            color: #fff;
+        }
 
-    nav .button:hover {
-        color: #fff;
+        .second {
+            font-size: 1.2em;
+        }
     }
-
-    nav .nav-item {
-        color: $header-color;
-        font-weight: 400;
-        margin: 0;
-        font-size: 1.4em;
-        padding: 0 1.6rem;
-    }
-
 
     .dropdown.button::after {
         border: 0px;
@@ -87,6 +85,36 @@ h1, h2, h3, h4, h5, h6 {
         border-right-color: transparent;
         border-left-color: transparent;
         border-bottom-color: transparent;
+    }
+
+
+    .logo {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+
+        > a {
+            display: block;
+            height: 100%;
+            background: url(#{$base-url}/img/logo.png) no-repeat center;
+            background-size: auto 100%;
+            position: relative;
+        }
+
+        .bottom-words {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            font-size: 170%;
+            margin-left: -50px;
+            color: $header-color;
+        }
+
+        .jimi {
+            visibility: hidden;
+        }
     }
 }
 
@@ -106,31 +134,8 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.jimi-logo {
-    display: block;
-    margin: 0 auto;
-    height: 100%;
-    max-width: 40%;
-    background: url(#{$base-url}/img/logo.png) no-repeat center;
-    background-size: auto 100%;
-    position: relative;
-
-    .bottom-words {
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        font-size: 170%;
-        margin-left: -50px;
-        color: $header-color;
-    }
-
-    .jimi {
-        visibility: hidden;
-    }
-}
-
 body {
-    padding-top: $header-width;
+    padding-top: $header-height;
 }
 
 /* Main Css
@@ -259,4 +264,49 @@ body {
     margin: 0 auto;
     background: transparent no-repeat center;
     background-size: contain;
+}
+
+
+/*
+ Medium CSS
+ --------------------------------------- */
+
+@media #{$medium-up} { 
+}
+
+/*
+ small CSS
+ --------------------------------------- */
+@media #{$small-only} { 
+    #header {
+        .expanded .nav-item {
+            background-color: white;
+        }
+
+        .expanded .nav-item:hover {
+            background-color: $header-color;
+        }
+
+        .title.back a {
+            background: white;
+        }
+
+        .title.back a:hover {
+            color: white;
+            background-color: $header-color;
+        }
+    }
+
+    #footer {
+        height: 180px;
+    }
+
+    .footer-item {
+        margin: 0 auto;
+        height: 60px;
+    }
+
+    .about-us {
+        padding-left: 20px;
+    }
 }

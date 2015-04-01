@@ -16,35 +16,54 @@
   <body class='lbs'>
     <div id='header'>
       <div class='wrap row'>
-        <a class='jimi-logo small-4 medium-4' href='http://www.xjimi.com' title='XJIMI'>
-          <div class='bottom-words'>
-            <span class='jimi'>极觅</span>
-            <span class='data'>数据</span>
-          </div>
-        </a>
-        <nav class='left columns small-4 medium-4'>
-          <span>
-            <a aria-expanded='false' class='button dropdown left nav-item' data-dropdown='products-drop' data-options='is_hover:true; hover_timeout:2000' href='#' id='nav-products'>产品
-            <span></span></a>
-            <ul aria-hidden='true' class='f-dropdown' data-dropdown-content='' id='products-drop'>
+        <div class='logo'>
+          <a class='small-6 medium-4 medium-offset-4' href='http://www.xjimi.com' title='XJIMI'>
+            <div class='bottom-words'>
+              <span class='jimi'>极觅</span>
+              <span class='data'>数据</span>
+            </div>
+          </a>
+        </div>
+        <nav class='top-bar' data-topbar='' role='navigation'>
+          <ul class='title-area'>
+            <li class='name'>
+              <h1>xjimi</h1>
+            </li>
+            <li class='toggle-topbar menu-icon'>
+              <a href=''>
+                <span></span>
+              </a>
+            </li>
+          </ul>
+          <section class='top-bar-section'>
+            <ul class='left'>
+              <li class='has-dropdown'>
+                <a class='nav-item'>产品</a>
+                <ul class='dropdown'>
+                  <li>
+                    <a class='nav-item second' href='/products/banlv.html'>伴旅APP</a>
+                  </li>
+                  <li>
+                    <a class='nav-item second' href='/products/bi.html'>BI管理端</a>
+                  </li>
+                  <li>
+                    <a class='nav-item second' href='/products/lbs.html'>LBS活动</a>
+                  </li>
+                </ul>
+              </li>
               <li>
-                <a class='button' href='/products/banlv.html'>伴旅APP</a>
-                <a class='button' href='/products/bi.html'>BI管理端</a>
-                <a class='button' href='/products/lbs.html'>LBS活动</a>
+                <a class='nav-item' href='/coorperates.html' id='nav-coorperates'>景区加盟</a>
               </li>
             </ul>
-          </span>
-          <span>
-            <a class='button left nav-item' href='/coorperates.html' id='nav-coorperates'>景区加盟</a>
-          </span>
-        </nav>
-        <nav class='right columns small-4 medium-4'>
-          <span>
-            <a class='button right nav-item' href='/join-us.html' id='nav-joinus'>加入我们</a>
-          </span>
-          <span>
-            <a class='button right nav-item' href='/team.html' id='nav-team'>关于</a>
-          </span>
+            <ul class='right'>
+              <li>
+                <a class='nav-item' href='/join-us.html' id='nav-joinus'>加入我们</a>
+              </li>
+              <li>
+                <a class='nav-item' href='/team.html' id='nav-team'>关于</a>
+              </li>
+            </ul>
+          </section>
         </nav>
       </div>
     </div>
@@ -60,11 +79,11 @@
     </div>
     <div class='section activities'>
       <div class='wrap row feature'>
+        <div class='model'></div>
         <div class='medium-4 content'>
           <h2>LBS活动策划</h2>
           <p>连接优质匹配的景区资源 <br/> 为线下活动打开市场大门</p>
         </div>
-        <div class='model medium-8'></div>
       </div>
     </div>
     <div class='section online-promote'>
@@ -78,11 +97,11 @@
     </div>
     <div class='section hot-scenic'>
       <div class='wrap row feature'>
+        <div class='model'></div>
         <div class='medium-4 content'>
           <h2>景区热度上升</h2>
           <p>结合线上用户流量与线下活动资源 <br/> 带动景区人气，扩大盈利空间。</p>
         </div>
-        <div class='model medium-8'></div>
       </div>
     </div>
     <div class='contact-about'>
@@ -122,7 +141,7 @@
     </div>
     <div id='footer'>
       <div class='row'>
-        <div class='columns medium-4'>
+        <div class='columns medium-4 small-12 footer-item'>
           <ul>
             <li class='left has-next'>
               <a href='/privacy-policy'>隐私政策</a>
@@ -132,13 +151,13 @@
             </li>
           </ul>
         </div>
-        <div class='columns medium-4'>
+        <div class='columns medium-4 small-12 footer-item'>
           <p class='copyright'>&copy;2015, 深圳极觅数据技术有限公司</p>
           <p class='miitbeian'>
             <a href='http://www.miitbeian.gov.cn/' target='_blank'>粤ICP备14079293</a>
           </p>
         </div>
-        <div class='columns medium-4 social'>
+        <div class='columns medium-4 small-12 footer-item'>
           <ul>
             <div class='li right'>
               <a href='http://www.weibo.com/u/5300092155?topnav=1&amp;wvr=5&amp;topsug=1#'>
@@ -151,6 +170,7 @@
     </div>
     <script src='/bower_components/jquery/dist/jquery.min.js' type='text/javascript'></script>
     <script src='/bower_components/foundation/js/foundation.min.js' type='text/javascript'></script>
+    <script src='/bower_components/foundation/js/foundation/foundation.topbar.js' type='text/javascript'></script>
     <script src='/js/main.js' type='text/javascript'></script>
     <script src='/js/products.js' type='text/javascript'></script>
   </body>
