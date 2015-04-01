@@ -11,27 +11,26 @@
     %link{:rel => "stylesheet", :type => "text/css", :href => "#{$base_url}/stylesheets/products.css"}
   %body.app
     = Haml::Engine.new(header_template).render
-    .section
-      .first-view
-        .wrap
-          .container.row
-            .columns.medium-6
-              %h5 根据您的游玩地选择
-              .scenic-radios
-                .radio-container.szww
-                  %input#szww-radio{:type => "radio", :name => "appname", :checked => "", :value => "szww"}
-                  %label{:for => "szww-radio"} 深圳世界之窗
-                .radio-container.zhosr
-                  %input#zhosr-radio{:type => "radio", :name => "appname", :value => "zhosr"}
-                  %label{:for => "zhosr-radio"} 珠海海泉湾
-            .columns.medium-6
-              %h5 根据您的手机，选择下载
-              .row
-                .columns.small-6
-                  %a.ios.store-icon{:href => "https://itunes.apple.com/cn/app/shi-jie-zhi-chuang-ban-lu/id939966230?ls=1&mt=8"}
-                  %a.android.store-icon{:href => "http://fir.im/szww"}
-                .columns.small-6
-                  %img.qrcode{:src => "#{$base_url}/img/products/szww-qrcode.jpg"}
+    .first-view
+      .wrap
+        .container.row
+          .columns.medium-6
+            %h5 根据您的游玩地选择
+            .scenic-radios
+              .radio-container.szww
+                %input#szww-radio{:type => "radio", :name => "appname", :checked => "", :value => "szww"}
+                %label{:for => "szww-radio"} 深圳世界之窗
+              .radio-container.zhosr
+                %input#zhosr-radio{:type => "radio", :name => "appname", :value => "zhosr"}
+                %label{:for => "zhosr-radio"} 珠海海泉湾
+          .columns.medium-6
+            %h5 根据您的手机，选择下载
+            .row
+              .columns.small-6
+                %a.ios.store-icon{:href => "https://itunes.apple.com/cn/app/shi-jie-zhi-chuang-ban-lu/id939966230?ls=1&mt=8"}
+                %a.android.store-icon{:href => "http://fir.im/szww"}
+              .columns.small-6
+                %img.qrcode{:src => "#{$base_url}/img/products/szww-qrcode.jpg"}
     .section.scenic-information
       .wrap.row.feature
         .model

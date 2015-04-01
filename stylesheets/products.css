@@ -2043,105 +2043,101 @@ body {
   text-align: center;
 }
 
-/* line 37, ../scss/products.scss */
-.first-view {
-  height: 100%;
-}
-/* line 40, ../scss/products.scss */
+/* line 38, ../scss/products.scss */
 .first-view * {
   color: white;
 }
-/* line 44, ../scss/products.scss */
+/* line 42, ../scss/products.scss */
 .first-view > * {
   height: 100%;
 }
 
-/* line 49, ../scss/products.scss */
+/* line 47, ../scss/products.scss */
 .app .first-view {
   background-image: url(/img/products/app-banner.jpg);
 }
 
-/* line 53, ../scss/products.scss */
+/* line 51, ../scss/products.scss */
 .lbs .first-view {
   background-image: url(/img/products/lbs-banner.jpg);
 }
 
-/* line 57, ../scss/products.scss */
+/* line 55, ../scss/products.scss */
 .bi .first-view {
   background-image: url(/img/products/bi-banner.jpg);
 }
 
-/* line 61, ../scss/products.scss */
+/* line 59, ../scss/products.scss */
 .scenic-information .feature {
   background-image: url("/img/products/app-scenic.jpg");
 }
 
-/* line 65, ../scss/products.scss */
+/* line 63, ../scss/products.scss */
 .lbs-game .feature {
   background-image: url("/img/products/app-games.jpg");
 }
 
-/* line 69, ../scss/products.scss */
+/* line 67, ../scss/products.scss */
 .social .feature {
   background-image: url("/img/products/app-social.jpg");
 }
 
-/* line 73, ../scss/products.scss */
+/* line 71, ../scss/products.scss */
 .voice-intro .feature {
   background-image: url("/img/products/app-voice.jpg");
 }
 
-/* line 77, ../scss/products.scss */
+/* line 75, ../scss/products.scss */
 .sharing .feature {
   background-image: url("/img/products/app-sharing.jpg");
 }
 
-/* line 81, ../scss/products.scss */
+/* line 79, ../scss/products.scss */
 .online-manage .feature {
   background-image: url("/img/products/bi-online-manage.jpg");
 }
 
-/* line 85, ../scss/products.scss */
+/* line 83, ../scss/products.scss */
 .push-notification .feature {
   background-image: url("/img/products/bi-push.jpg");
 }
 
-/* line 89, ../scss/products.scss */
+/* line 87, ../scss/products.scss */
 .track .feature {
   background-image: url("/img/products/bi-track.jpg");
 }
 
-/* line 93, ../scss/products.scss */
+/* line 91, ../scss/products.scss */
 .data-mining .feature {
   background-image: url("/img/products/bi-data-mining.jpg");
 }
 
-/* line 97, ../scss/products.scss */
+/* line 95, ../scss/products.scss */
 .ugc .feature {
   background-image: url("/img/products/bi-ugc.jpg");
 }
 
-/* line 101, ../scss/products.scss */
+/* line 99, ../scss/products.scss */
 .activities .feature {
   background-image: url("/img/products/lbs-activities.jpg");
 }
 
-/* line 105, ../scss/products.scss */
+/* line 103, ../scss/products.scss */
 .online-promote .feature {
   background-image: url("/img/products/lbs-online-promote.png");
 }
 
-/* line 109, ../scss/products.scss */
+/* line 107, ../scss/products.scss */
 .hot-scenic .feature {
   background-image: url("/img/products/lbs-hot.png");
 }
 
-/* line 113, ../scss/products.scss */
+/* line 111, ../scss/products.scss */
 .first-view .container {
   position: absolute;
 }
 
-/* line 117, ../scss/products.scss */
+/* line 115, ../scss/products.scss */
 .lbs .first-view .container {
   padding: 10px 20px;
   max-width: 50%;
@@ -2151,26 +2147,26 @@ body {
   background-color: rgba(240, 240, 240, 0.8);
   border-radius: 5px;
 }
-/* line 126, ../scss/products.scss */
+/* line 124, ../scss/products.scss */
 .lbs .first-view .container * {
   color: #2cbf4d;
   text-align: left;
 }
-/* line 131, ../scss/products.scss */
+/* line 129, ../scss/products.scss */
 .lbs .first-view .container p::before {
   border: 1px #2cbf4d solid;
   width: 100%;
 }
 
-/* line 137, ../scss/products.scss */
+/* line 135, ../scss/products.scss */
 .scenic-radios {
   margin-left: 0;
 }
-/* line 140, ../scss/products.scss */
+/* line 138, ../scss/products.scss */
 .scenic-radios input[type="radio"] {
   display: none;
 }
-/* line 144, ../scss/products.scss */
+/* line 142, ../scss/products.scss */
 .scenic-radios label:before {
   content: "";
   width: 0;
@@ -2180,12 +2176,12 @@ body {
   border-radius: 20px;
   margin-right: 16px;
 }
-/* line 154, ../scss/products.scss */
+/* line 152, ../scss/products.scss */
 .scenic-radios input[type="radio"]:checked + label:before {
   background-color: #2cbf4d;
 }
 
-/* line 159, ../scss/products.scss */
+/* line 157, ../scss/products.scss */
 .store-icon {
   display: inline-block;
   width: 135px;
@@ -2193,17 +2189,17 @@ body {
   margin: 8px 0;
 }
 
-/* line 166, ../scss/products.scss */
+/* line 164, ../scss/products.scss */
 .ios {
   background: url(/img/icons/App_Store_Badge_135x40.svg) transparent no-repeat;
 }
 
-/* line 169, ../scss/products.scss */
+/* line 167, ../scss/products.scss */
 .android {
   background: url(/img/icons/Android_135x40.png) transparent no-repeat;
 }
 
-/* line 172, ../scss/products.scss */
+/* line 170, ../scss/products.scss */
 .qrcode {
   width: 100px;
   height: 100px;
@@ -2214,7 +2210,7 @@ body {
  Medium CSS
  --------------------------------------- */
 @media only screen and (min-width: 40.063em) {
-  /* line 184, ../scss/products.scss */
+  /* line 182, ../scss/products.scss */
   .app .first-view .container {
     left: 50%;
     margin-left: -270px;
@@ -2222,22 +2218,22 @@ body {
     width: 540px;
   }
 
-  /* line 191, ../scss/products.scss */
+  /* line 189, ../scss/products.scss */
   .radio-container.szww {
     margin-top: 24px;
   }
 
-  /* line 195, ../scss/products.scss */
+  /* line 193, ../scss/products.scss */
   .radio-container.zhosr {
     margin-top: 34px;
   }
 
-  /* line 199, ../scss/products.scss */
+  /* line 197, ../scss/products.scss */
   .section:nth-child(odd) .feature {
     background-position: right center;
   }
 
-  /* line 203, ../scss/products.scss */
+  /* line 201, ../scss/products.scss */
   .section:nth-child(even) .feature {
     background-position: left center;
   }
@@ -2246,13 +2242,13 @@ body {
  small CSS
  --------------------------------------- */
 @media only screen and (max-width: 40em) {
-  /* line 212, ../scss/products.scss */
+  /* line 210, ../scss/products.scss */
   .radio-container {
     display: inline-block;
     margin: 12px;
   }
 
-  /* line 217, ../scss/products.scss */
+  /* line 215, ../scss/products.scss */
   .app .first-view .container {
     width: auto;
     margin: 20px 0;
@@ -2260,21 +2256,21 @@ body {
     bottom: 0;
   }
 
-  /* line 224, ../scss/products.scss */
+  /* line 222, ../scss/products.scss */
   .section {
     height: auto;
   }
 
-  /* line 228, ../scss/products.scss */
+  /* line 226, ../scss/products.scss */
   .feature {
     width: 300px;
     background-position: center top;
   }
-  /* line 232, ../scss/products.scss */
+  /* line 230, ../scss/products.scss */
   .feature .model {
     height: 300px;
   }
-  /* line 236, ../scss/products.scss */
+  /* line 234, ../scss/products.scss */
   .feature .content {
     display: block;
     margin-top: 0;

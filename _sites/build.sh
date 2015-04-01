@@ -44,7 +44,22 @@ while [ $top -gt 0 ]; do
         fi
     done
 done
+
 mv $siteDirectory/_pages/* $siteDirectory/
 rm -rf $siteDirectory/_pages
 rm -rf $siteDirectory/_includes
 
+if [[ $1 == -r ]]; then
+    for f in $rootDirectory*
+    do
+        if [[ -d $f ]]; then
+            if [[ $f != ./_sites ]]; then
+                rm -rf $f
+            fi
+        else 
+            rm $f
+        fi
+    done;
+    mv  $siteDirectory/* $rootDirectory;
+    rm -rf $siteDirectory;
+fi
