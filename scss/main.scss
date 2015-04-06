@@ -295,6 +295,17 @@ body {
             color: white;
             background-color: $header-color;
         }
+
+        .logo {
+            > a {
+                background-position: left center;
+            }
+
+            .bottom-words {
+                left: 0;
+                margin-left: 26px;
+            }
+        }
     }
 
     #footer {

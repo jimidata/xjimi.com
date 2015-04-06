@@ -1989,19 +1989,28 @@ body {
     color: white;
     background-color: #2dcca9;
   }
-
   /* line 300, ../scss/main.scss */
+  #header .logo > a {
+    background-position: left center;
+  }
+  /* line 304, ../scss/main.scss */
+  #header .logo .bottom-words {
+    left: 0;
+    margin-left: 26px;
+  }
+
+  /* line 311, ../scss/main.scss */
   #footer {
     height: 180px;
   }
 
-  /* line 304, ../scss/main.scss */
+  /* line 315, ../scss/main.scss */
   .footer-item {
     margin: 0 auto;
     height: 60px;
   }
 
-  /* line 309, ../scss/main.scss */
+  /* line 320, ../scss/main.scss */
   .about-us {
     padding-left: 20px;
   }
