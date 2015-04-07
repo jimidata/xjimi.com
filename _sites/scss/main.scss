@@ -29,6 +29,11 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 4px;
 }
 
+.required:after {
+    content: " *";
+    color: #ff4444;
+}
+
 /* Header Css
  *  --------------------------------------- */
 #header {

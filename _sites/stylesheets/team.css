@@ -1704,9 +1704,15 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
 }
 
+/* line 32, ../scss/main.scss */
+.required:after {
+  content: " *";
+  color: #ff4444;
+}
+
 /* Header Css
  *  --------------------------------------- */
-/* line 34, ../scss/main.scss */
+/* line 39, ../scss/main.scss */
 #header {
   position: fixed;
   z-index: 9;
@@ -1717,23 +1723,23 @@ h1, h2, h3, h4, h5, h6 {
   height: 120px;
   box-shadow: 0px 2px 2px #888;
 }
-/* line 44, ../scss/main.scss */
+/* line 49, ../scss/main.scss */
 #header * {
   font-family: Helvetica, "Microsoft YaHei", "微软雅黑", STHeiti, Arial;
 }
-/* line 48, ../scss/main.scss */
+/* line 53, ../scss/main.scss */
 #header .wrap {
   height: 100%;
 }
-/* line 52, ../scss/main.scss */
+/* line 57, ../scss/main.scss */
 #header nav {
   margin-top: 77px;
 }
-/* line 55, ../scss/main.scss */
+/* line 60, ../scss/main.scss */
 #header nav .name h1 {
   display: none;
 }
-/* line 58, ../scss/main.scss */
+/* line 63, ../scss/main.scss */
 #header nav .nav-item {
   color: #2dcca9;
   font-weight: 400;
@@ -1741,19 +1747,19 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.4em;
   padding: 0 1.6rem;
 }
-/* line 66, ../scss/main.scss */
+/* line 71, ../scss/main.scss */
 #header nav .nav-item:hover {
   color: #fff;
 }
-/* line 70, ../scss/main.scss */
+/* line 75, ../scss/main.scss */
 #header nav .second {
   font-size: 1.2em;
 }
-/* line 75, ../scss/main.scss */
+/* line 80, ../scss/main.scss */
 #header .dropdown.button::after {
   border: 0px;
 }
-/* line 79, ../scss/main.scss */
+/* line 84, ../scss/main.scss */
 #header .dropdown span {
   display: inline-block;
   content: "";
@@ -1764,7 +1770,7 @@ h1, h2, h3, h4, h5, h6 {
   border-left-color: transparent;
   border-bottom-color: transparent;
 }
-/* line 91, ../scss/main.scss */
+/* line 96, ../scss/main.scss */
 #header .logo {
   position: absolute;
   left: 0;
@@ -1772,7 +1778,7 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   width: 100%;
 }
-/* line 98, ../scss/main.scss */
+/* line 103, ../scss/main.scss */
 #header .logo > a {
   display: block;
   height: 100%;
@@ -1780,7 +1786,7 @@ h1, h2, h3, h4, h5, h6 {
   background-size: auto 100%;
   position: relative;
 }
-/* line 106, ../scss/main.scss */
+/* line 111, ../scss/main.scss */
 #header .logo .bottom-words {
   position: absolute;
   bottom: 0;
@@ -1789,22 +1795,22 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: -50px;
   color: #2dcca9;
 }
-/* line 115, ../scss/main.scss */
+/* line 120, ../scss/main.scss */
 #header .logo .jimi {
   visibility: hidden;
 }
 
-/* line 121, ../scss/main.scss */
+/* line 126, ../scss/main.scss */
 #products-drop:before, #products-drop:after {
   left: 74px;
 }
 
-/* line 124, ../scss/main.scss */
+/* line 129, ../scss/main.scss */
 #products-drop {
   width: 160px;
   margin-top: 0;
 }
-/* line 128, ../scss/main.scss */
+/* line 133, ../scss/main.scss */
 #products-drop li a {
   padding: 0;
   margin: 0;
@@ -1813,19 +1819,19 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 40px;
 }
 
-/* line 137, ../scss/main.scss */
+/* line 142, ../scss/main.scss */
 body {
   padding-top: 120px;
 }
 
 /* Main Css
  *  --------------------------------------- */
-/* line 143, ../scss/main.scss */
+/* line 148, ../scss/main.scss */
 .main {
   width: 100%;
 }
 
-/* line 147, ../scss/main.scss */
+/* line 152, ../scss/main.scss */
 .first-view {
   width: 100%;
   height: 500px;
@@ -1836,7 +1842,7 @@ body {
   background-position: center;
 }
 
-/* line 157, ../scss/main.scss */
+/* line 162, ../scss/main.scss */
 .first-view:after {
   clear: both;
   content: " ";
@@ -1851,7 +1857,7 @@ body {
 
 /* Footer Css
  * ----------------------------------------- */
-/* line 171, ../scss/main.scss */
+/* line 176, ../scss/main.scss */
 #footer {
   height: 60px;
   width: 100%;
@@ -1859,50 +1865,50 @@ body {
   overflow: hidden;
 }
 
-/* line 178, ../scss/main.scss */
+/* line 183, ../scss/main.scss */
 #footer a, #footer p {
   color: #777;
   font-size: 14px;
   text-align: center;
 }
 
-/* line 184, ../scss/main.scss */
+/* line 189, ../scss/main.scss */
 #footer .copyright {
   margin-top: 10px;
   margin-bottom: 2px;
 }
 
-/* line 189, ../scss/main.scss */
+/* line 194, ../scss/main.scss */
 #footer ul a {
   line-height: 60px;
   padding: 0 20px;
 }
 
-/* line 194, ../scss/main.scss */
+/* line 199, ../scss/main.scss */
 #footer li {
   display: inline-block;
   margin: 0;
 }
 
-/* line 199, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 #footer li.has-next:after {
   color: #777;
   content: "|";
 }
 
-/* line 204, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 .social img {
   border-radius: 4px;
 }
 
-/* line 208, ../scss/main.scss */
+/* line 213, ../scss/main.scss */
 .contact-about {
   position: relative;
   background-color: #dbd9da;
   padding-bottom: 20px;
 }
 
-/* line 214, ../scss/main.scss */
+/* line 219, ../scss/main.scss */
 .contact-about:before {
   content: "";
   background-color: gray;
@@ -1912,7 +1918,7 @@ body {
   width: 100%;
 }
 
-/* line 223, ../scss/main.scss */
+/* line 228, ../scss/main.scss */
 .contact-about:after {
   content: "";
   background-color: white;
@@ -1922,32 +1928,32 @@ body {
   width: 100%;
 }
 
-/* line 232, ../scss/main.scss */
+/* line 237, ../scss/main.scss */
 .submit {
   margin-right: 16px;
   padding: 10px 30px;
   background-color: gray;
 }
 
-/* line 238, ../scss/main.scss */
+/* line 243, ../scss/main.scss */
 .section-title {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
 }
 
-/* line 244, ../scss/main.scss */
+/* line 249, ../scss/main.scss */
 .about-us {
   padding-left: 80px;
 }
 
-/* line 248, ../scss/main.scss */
+/* line 253, ../scss/main.scss */
 .about-us ul {
   margin-left: 0;
   list-style-type: none;
 }
 
-/* line 253, ../scss/main.scss */
+/* line 258, ../scss/main.scss */
 .sub-section-title {
   color: black;
   text-align: left;
@@ -1955,7 +1961,7 @@ body {
   padding-bottom: 20px;
 }
 
-/* line 260, ../scss/main.scss */
+/* line 265, ../scss/main.scss */
 .model {
   display: inline-block;
   vertical-align: middle;
@@ -1972,45 +1978,45 @@ body {
  small CSS
  --------------------------------------- */
 @media only screen and (max-width: 40em) {
-  /* line 282, ../scss/main.scss */
+  /* line 287, ../scss/main.scss */
   #header .expanded .nav-item {
     background-color: white;
   }
-  /* line 286, ../scss/main.scss */
+  /* line 291, ../scss/main.scss */
   #header .expanded .nav-item:hover {
     background-color: #2dcca9;
   }
-  /* line 290, ../scss/main.scss */
+  /* line 295, ../scss/main.scss */
   #header .title.back a {
     background: white;
   }
-  /* line 294, ../scss/main.scss */
+  /* line 299, ../scss/main.scss */
   #header .title.back a:hover {
     color: white;
     background-color: #2dcca9;
   }
-  /* line 300, ../scss/main.scss */
+  /* line 305, ../scss/main.scss */
   #header .logo > a {
     background-position: left center;
   }
-  /* line 304, ../scss/main.scss */
+  /* line 309, ../scss/main.scss */
   #header .logo .bottom-words {
     left: 0;
     margin-left: 26px;
   }
 
-  /* line 311, ../scss/main.scss */
+  /* line 316, ../scss/main.scss */
   #footer {
     height: 180px;
   }
 
-  /* line 315, ../scss/main.scss */
+  /* line 320, ../scss/main.scss */
   .footer-item {
     margin: 0 auto;
     height: 60px;
   }
 
-  /* line 320, ../scss/main.scss */
+  /* line 325, ../scss/main.scss */
   .about-us {
     padding-left: 20px;
   }

@@ -30,3 +30,23 @@ var _hmt = _hmt || [];
   var s = document.getElementsByTagName("script")[0]; 
   s.parentNode.insertBefore(hm, s);
 })();
+
+$(document).ready(function() {
+    $('.contact-form input').on("change keyup paste", function () {
+        var email = $('.contact-form input[name="email"]').val();
+        var name = $('.contact-form input[name="name"]').val();
+        var company = $('.contact-form input[name="company"]').val();
+        var job = $('.contact-form input[name="job"]').val();
+
+        if (email != null && email !== "" && name != null && name !== "" && company != null && company !== "" && job != null && job !== "") {
+            $('.contact-form .submit.disabled').removeClass("disabled");
+            $('.contact-form .submit').addClass("enabled");
+        } else {
+            $('.contact-form .submit.enabled').removeClass("enabled");
+            $('.contact-form .submit').addClass("disabled");
+        }
+    });
+    $('.contact-form .submit.disabled').click(function(event) {
+        event.preventDefault();
+    });
+});
