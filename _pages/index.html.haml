@@ -12,12 +12,14 @@
   %body
     = Haml::Engine.new(header_template).render
     .first-view.section
-      .wrap.container
-        .columns.medium-6.medium-offset-6
-          %h1.slogan 我们是全球领先的空间数据技术平台提供商与运营商，深度专注于旅游行业垂直需求，伴您轻松玩转智慧旅游！
-          %a.button.radius.download{:href => "#{$base_url}/products/banlv.html"}
-            %span.download-icon
-            下载伴旅
+      %img.banner-image{:src => "#{$base_url}/img/home-banner.jpg"}
+      .caption-container
+        .wrap
+          .columns.medium-6.medium-offset-6
+            %h1.slogan 我们是全球领先的空间数据技术平台提供商与运营商，深度专注于旅游行业垂直需求，伴您轻松玩转智慧旅游！
+            %a.button.radius.download{:href => "#{$base_url}/products/banlv.html"}
+              %span.download-icon
+              下载伴旅
     .products-container.section.wrap
       %h3.section-title 产品介绍
       .banlv-app.product

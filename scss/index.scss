@@ -11,15 +11,10 @@ body {
 }
 
 .first-view {
-    background-image: url("#{$base_url}/img/home-banner.jpg");
-}
-
-.first-view .container {
-    margin-top: 80px;
+    //background-image: url("#{$base_url}/img/home-banner.jpg");
 }
 
 .slogan {
-    margin-top: 80px;
     font-size: 18pt;
     text-align: left;
     padding: 0;
@@ -185,6 +180,10 @@ body {
  Medium CSS
  --------------------------------------- */
 @media #{$medium-up} { 
+    .slogan {
+        font-size: 16pt;
+    }
+
     .product-item {
         height: 480px;
     }
@@ -202,6 +201,15 @@ body {
  small CSS
  --------------------------------------- */
 @media #{$small-only} { 
+    .slogan {
+        font-size: 12pt;
+    }
+
+    .download {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
     .product {
         height: auto;
     }

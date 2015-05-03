@@ -1834,15 +1834,26 @@ body {
 /* line 152, ../scss/main.scss */
 .first-view {
   width: 100%;
-  height: 500px;
   position: relative;
   overflow: hidden;
   background-color: #f3f2ea;
   background-size: cover;
   background-position: center;
 }
+/* line 160, ../scss/main.scss */
+.first-view .caption-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
-/* line 162, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+/* line 172, ../scss/main.scss */
 .first-view:after {
   clear: both;
   content: " ";
@@ -1857,7 +1868,7 @@ body {
 
 /* Footer Css
  * ----------------------------------------- */
-/* line 176, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 #footer {
   height: 60px;
   width: 100%;
@@ -1865,50 +1876,50 @@ body {
   overflow: hidden;
 }
 
-/* line 183, ../scss/main.scss */
+/* line 193, ../scss/main.scss */
 #footer a, #footer p {
   color: #777;
   font-size: 14px;
   text-align: center;
 }
 
-/* line 189, ../scss/main.scss */
+/* line 199, ../scss/main.scss */
 #footer .copyright {
   margin-top: 10px;
   margin-bottom: 2px;
 }
 
-/* line 194, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 #footer ul a {
   line-height: 60px;
   padding: 0 20px;
 }
 
-/* line 199, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 #footer li {
   display: inline-block;
   margin: 0;
 }
 
-/* line 204, ../scss/main.scss */
+/* line 214, ../scss/main.scss */
 #footer li.has-next:after {
   color: #777;
   content: "|";
 }
 
-/* line 209, ../scss/main.scss */
+/* line 219, ../scss/main.scss */
 .social img {
   border-radius: 4px;
 }
 
-/* line 213, ../scss/main.scss */
+/* line 223, ../scss/main.scss */
 .contact-about {
   position: relative;
   background-color: #dbd9da;
   padding-bottom: 20px;
 }
 
-/* line 219, ../scss/main.scss */
+/* line 229, ../scss/main.scss */
 .contact-about:before {
   content: "";
   background-color: gray;
@@ -1918,7 +1929,7 @@ body {
   width: 100%;
 }
 
-/* line 228, ../scss/main.scss */
+/* line 238, ../scss/main.scss */
 .contact-about:after {
   content: "";
   background-color: white;
@@ -1928,32 +1939,32 @@ body {
   width: 100%;
 }
 
-/* line 237, ../scss/main.scss */
+/* line 247, ../scss/main.scss */
 .submit {
   margin-right: 16px;
   padding: 10px 30px;
   background-color: gray;
 }
 
-/* line 243, ../scss/main.scss */
+/* line 253, ../scss/main.scss */
 .section-title {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
 }
 
-/* line 249, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 .about-us {
   padding-left: 80px;
 }
 
-/* line 253, ../scss/main.scss */
+/* line 263, ../scss/main.scss */
 .about-us ul {
   margin-left: 0;
   list-style-type: none;
 }
 
-/* line 258, ../scss/main.scss */
+/* line 268, ../scss/main.scss */
 .sub-section-title {
   color: black;
   text-align: left;
@@ -1961,7 +1972,7 @@ body {
   padding-bottom: 20px;
 }
 
-/* line 265, ../scss/main.scss */
+/* line 275, ../scss/main.scss */
 .model {
   display: inline-block;
   vertical-align: middle;
@@ -1978,45 +1989,50 @@ body {
  small CSS
  --------------------------------------- */
 @media only screen and (max-width: 40em) {
-  /* line 287, ../scss/main.scss */
+  /* line 296, ../scss/main.scss */
+  .caption-container {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /* line 301, ../scss/main.scss */
   #header .expanded .nav-item {
     background-color: white;
   }
-  /* line 291, ../scss/main.scss */
+  /* line 305, ../scss/main.scss */
   #header .expanded .nav-item:hover {
     background-color: #2dcca9;
   }
-  /* line 295, ../scss/main.scss */
+  /* line 309, ../scss/main.scss */
   #header .title.back a {
     background: white;
   }
-  /* line 299, ../scss/main.scss */
+  /* line 313, ../scss/main.scss */
   #header .title.back a:hover {
     color: white;
     background-color: #2dcca9;
   }
-  /* line 305, ../scss/main.scss */
+  /* line 319, ../scss/main.scss */
   #header .logo > a {
     background-position: left center;
   }
-  /* line 309, ../scss/main.scss */
+  /* line 323, ../scss/main.scss */
   #header .logo .bottom-words {
     left: 0;
     margin-left: 26px;
   }
 
-  /* line 316, ../scss/main.scss */
+  /* line 330, ../scss/main.scss */
   #footer {
     height: 180px;
   }
 
-  /* line 320, ../scss/main.scss */
+  /* line 334, ../scss/main.scss */
   .footer-item {
     margin: 0 auto;
     height: 60px;
   }
 
-  /* line 325, ../scss/main.scss */
+  /* line 339, ../scss/main.scss */
   .about-us {
     padding-left: 20px;
   }
@@ -2027,69 +2043,59 @@ body {
   border-color: #2285a2;
 }
 
-/* line 8, ../scss/join-us.scss */
-.first-view {
-  background-image: url(/img/join-us-banner.jpg);
-}
-
 /* line 12, ../scss/join-us.scss */
-body {
-  min-width: 960px;
-}
-
-/* line 16, ../scss/join-us.scss */
 .section-title {
   text-align: left;
 }
 
-/* line 20, ../scss/join-us.scss */
+/* line 16, ../scss/join-us.scss */
 .tabs.vertical {
   width: 160px;
   float: left;
 }
-/* line 24, ../scss/join-us.scss */
+/* line 20, ../scss/join-us.scss */
 .tabs.vertical > .tab-title {
   margin-bottom: 10px !important;
 }
-/* line 27, ../scss/join-us.scss */
+/* line 23, ../scss/join-us.scss */
 .tabs.vertical > .tab-title a {
   background-color: #aaa;
   color: white;
 }
-/* line 32, ../scss/join-us.scss */
+/* line 28, ../scss/join-us.scss */
 .tabs.vertical > .tab-title.active a {
   background-color: #2cbf4d;
 }
 
-/* line 38, ../scss/join-us.scss */
+/* line 34, ../scss/join-us.scss */
 .tabs-content {
   width: auto;
   max-width: 100%;
 }
 
-/* line 43, ../scss/join-us.scss */
+/* line 39, ../scss/join-us.scss */
 .recruitment-details {
   margin-left: 204px;
 }
-/* line 46, ../scss/join-us.scss */
+/* line 42, ../scss/join-us.scss */
 .recruitment-details > .content {
   padding-top: 0;
 }
-/* line 50, ../scss/join-us.scss */
+/* line 46, ../scss/join-us.scss */
 .recruitment-details .tabs {
   height: 60px;
   background-color: #EFEFEF;
 }
-/* line 54, ../scss/join-us.scss */
+/* line 50, ../scss/join-us.scss */
 .recruitment-details .tabs li {
   height: 60px;
 }
-/* line 59, ../scss/join-us.scss */
+/* line 55, ../scss/join-us.scss */
 .recruitment-details .tab-title > a {
   height: 100%;
   text-align: center;
 }
-/* line 64, ../scss/join-us.scss */
+/* line 60, ../scss/join-us.scss */
 .recruitment-details .tab-title.active {
   border-left: solid 1px #e1e1e1;
   border-right: solid 1px #e1e1e1;
@@ -2097,12 +2103,12 @@ body {
   border-radius: 4px;
 }
 
-/* line 72, ../scss/join-us.scss */
+/* line 68, ../scss/join-us.scss */
 .tab-title > a.two-line {
   padding-top: 6px;
 }
 
-/* line 76, ../scss/join-us.scss */
+/* line 72, ../scss/join-us.scss */
 .recruitment-process {
   height: 800px;
   width: 100%;
@@ -2110,11 +2116,11 @@ body {
   background: url(/img/recruitment-process.png) no-repeat center;
   background-size: 100% auto;
 }
-/* line 83, ../scss/join-us.scss */
+/* line 79, ../scss/join-us.scss */
 .recruitment-process .second-line, .recruitment-process .third-line {
   margin-top: 178px;
 }
-/* line 87, ../scss/join-us.scss */
+/* line 83, ../scss/join-us.scss */
 .recruitment-process li {
   text-align: center;
 }

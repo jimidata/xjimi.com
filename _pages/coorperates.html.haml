@@ -11,11 +11,13 @@
   %body
     = Haml::Engine.new(header_template).render
     .first-view
-      %h1
-        %img.title{:src => "#{$base_url}/img/coorperates/coorperates-title.png", "alt" => "低价甚至免费的景区接入"}
-      .welcome
-        %span.left-arrow
-        %span.text 真诚希望您的加盟！
+      %img.banner-image{:src => "#{$base_url}/img/coorperates/coorperates-banner.jpg"}
+      .caption-container
+        %h1
+          %img.title{:src => "#{$base_url}/img/coorperates/coorperates-title.png", "alt" => "低价甚至免费的景区接入"}
+        .welcome
+          %span.left-arrow
+          %span.text 真诚希望您的加盟！
     .main.wrap
       .section.trend
         .content.medium-5.medium-offset-7.small-8.small-offset-4.large-4.large-offset-8

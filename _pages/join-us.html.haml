@@ -7,10 +7,12 @@
 %html
   %head
     = Haml::Engine.new(head_template).render
+    <meta name="viewport" content="width=1024" />
     %link{:rel => "stylesheet", :type => "text/css", :href => "#{$base_url}/stylesheets/join-us.css"}
   %body
     = Haml::Engine.new(header_template).render
     .first-view
+      %img.banner-image{:src => "#{$base_url}/img/join-us-banner.jpg"}
     .main.wrap{}
       %h4.section-title 招聘信息
       %ul.tabs.vertical#main-tab{:"data-tab" => ""}

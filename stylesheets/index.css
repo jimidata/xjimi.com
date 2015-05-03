@@ -1834,15 +1834,26 @@ body {
 /* line 152, ../scss/main.scss */
 .first-view {
   width: 100%;
-  height: 500px;
   position: relative;
   overflow: hidden;
   background-color: #f3f2ea;
   background-size: cover;
   background-position: center;
 }
+/* line 160, ../scss/main.scss */
+.first-view .caption-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
 
-/* line 162, ../scss/main.scss */
+/* line 167, ../scss/main.scss */
+.banner-image {
+  width: 100%;
+  height: auto;
+}
+
+/* line 172, ../scss/main.scss */
 .first-view:after {
   clear: both;
   content: " ";
@@ -1857,7 +1868,7 @@ body {
 
 /* Footer Css
  * ----------------------------------------- */
-/* line 176, ../scss/main.scss */
+/* line 186, ../scss/main.scss */
 #footer {
   height: 60px;
   width: 100%;
@@ -1865,50 +1876,50 @@ body {
   overflow: hidden;
 }
 
-/* line 183, ../scss/main.scss */
+/* line 193, ../scss/main.scss */
 #footer a, #footer p {
   color: #777;
   font-size: 14px;
   text-align: center;
 }
 
-/* line 189, ../scss/main.scss */
+/* line 199, ../scss/main.scss */
 #footer .copyright {
   margin-top: 10px;
   margin-bottom: 2px;
 }
 
-/* line 194, ../scss/main.scss */
+/* line 204, ../scss/main.scss */
 #footer ul a {
   line-height: 60px;
   padding: 0 20px;
 }
 
-/* line 199, ../scss/main.scss */
+/* line 209, ../scss/main.scss */
 #footer li {
   display: inline-block;
   margin: 0;
 }
 
-/* line 204, ../scss/main.scss */
+/* line 214, ../scss/main.scss */
 #footer li.has-next:after {
   color: #777;
   content: "|";
 }
 
-/* line 209, ../scss/main.scss */
+/* line 219, ../scss/main.scss */
 .social img {
   border-radius: 4px;
 }
 
-/* line 213, ../scss/main.scss */
+/* line 223, ../scss/main.scss */
 .contact-about {
   position: relative;
   background-color: #dbd9da;
   padding-bottom: 20px;
 }
 
-/* line 219, ../scss/main.scss */
+/* line 229, ../scss/main.scss */
 .contact-about:before {
   content: "";
   background-color: gray;
@@ -1918,7 +1929,7 @@ body {
   width: 100%;
 }
 
-/* line 228, ../scss/main.scss */
+/* line 238, ../scss/main.scss */
 .contact-about:after {
   content: "";
   background-color: white;
@@ -1928,32 +1939,32 @@ body {
   width: 100%;
 }
 
-/* line 237, ../scss/main.scss */
+/* line 247, ../scss/main.scss */
 .submit {
   margin-right: 16px;
   padding: 10px 30px;
   background-color: gray;
 }
 
-/* line 243, ../scss/main.scss */
+/* line 253, ../scss/main.scss */
 .section-title {
   text-align: center;
   padding-top: 40px;
   padding-bottom: 20px;
 }
 
-/* line 249, ../scss/main.scss */
+/* line 259, ../scss/main.scss */
 .about-us {
   padding-left: 80px;
 }
 
-/* line 253, ../scss/main.scss */
+/* line 263, ../scss/main.scss */
 .about-us ul {
   margin-left: 0;
   list-style-type: none;
 }
 
-/* line 258, ../scss/main.scss */
+/* line 268, ../scss/main.scss */
 .sub-section-title {
   color: black;
   text-align: left;
@@ -1961,7 +1972,7 @@ body {
   padding-bottom: 20px;
 }
 
-/* line 265, ../scss/main.scss */
+/* line 275, ../scss/main.scss */
 .model {
   display: inline-block;
   vertical-align: middle;
@@ -1978,45 +1989,50 @@ body {
  small CSS
  --------------------------------------- */
 @media only screen and (max-width: 40em) {
-  /* line 287, ../scss/main.scss */
+  /* line 296, ../scss/main.scss */
+  .caption-container {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  /* line 301, ../scss/main.scss */
   #header .expanded .nav-item {
     background-color: white;
   }
-  /* line 291, ../scss/main.scss */
+  /* line 305, ../scss/main.scss */
   #header .expanded .nav-item:hover {
     background-color: #2dcca9;
   }
-  /* line 295, ../scss/main.scss */
+  /* line 309, ../scss/main.scss */
   #header .title.back a {
     background: white;
   }
-  /* line 299, ../scss/main.scss */
+  /* line 313, ../scss/main.scss */
   #header .title.back a:hover {
     color: white;
     background-color: #2dcca9;
   }
-  /* line 305, ../scss/main.scss */
+  /* line 319, ../scss/main.scss */
   #header .logo > a {
     background-position: left center;
   }
-  /* line 309, ../scss/main.scss */
+  /* line 323, ../scss/main.scss */
   #header .logo .bottom-words {
     left: 0;
     margin-left: 26px;
   }
 
-  /* line 316, ../scss/main.scss */
+  /* line 330, ../scss/main.scss */
   #footer {
     height: 180px;
   }
 
-  /* line 320, ../scss/main.scss */
+  /* line 334, ../scss/main.scss */
   .footer-item {
     margin: 0 auto;
     height: 60px;
   }
 
-  /* line 325, ../scss/main.scss */
+  /* line 339, ../scss/main.scss */
   .about-us {
     padding-left: 20px;
   }
@@ -2031,31 +2047,20 @@ body {
   padding-top: 120px !important;
 }
 
-/* line 13, ../scss/index.scss */
-.first-view {
-  background-image: url("/img/home-banner.jpg");
-}
-
 /* line 17, ../scss/index.scss */
-.first-view .container {
-  margin-top: 80px;
-}
-
-/* line 21, ../scss/index.scss */
 .slogan {
-  margin-top: 80px;
   font-size: 18pt;
   text-align: left;
   padding: 0;
   color: white;
 }
 
-/* line 29, ../scss/index.scss */
+/* line 24, ../scss/index.scss */
 .download i {
   font-size: 140%;
 }
 
-/* line 33, ../scss/index.scss */
+/* line 28, ../scss/index.scss */
 .download {
   background-color: white;
   float: right;
@@ -2065,7 +2070,7 @@ body {
   padding: 10px 30px;
 }
 
-/* line 42, ../scss/index.scss */
+/* line 37, ../scss/index.scss */
 .download-icon {
   display: inline-block;
   vertical-align: middle;
@@ -2075,46 +2080,46 @@ body {
   background-size: contain;
 }
 
-/* line 51, ../scss/index.scss */
+/* line 46, ../scss/index.scss */
 .download:hover {
   color: #1cbf0d;
 }
 
-/* line 55, ../scss/index.scss */
+/* line 50, ../scss/index.scss */
 .product-item {
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
 }
-/* line 60, ../scss/index.scss */
+/* line 55, ../scss/index.scss */
 .product-item .model {
   height: 100%;
 }
 
-/* line 65, ../scss/index.scss */
+/* line 60, ../scss/index.scss */
 .product-item > :last-child {
   margin-left: -10px;
 }
 
-/* line 69, ../scss/index.scss */
+/* line 64, ../scss/index.scss */
 .product-item .content {
   padding: 30px;
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 75, ../scss/index.scss */
+/* line 70, ../scss/index.scss */
 .product-item h2 {
   margin-top: 20px;
   text-align: center;
 }
 
-/* line 80, ../scss/index.scss */
+/* line 75, ../scss/index.scss */
 .product-item p {
   text-align: center;
 }
 
-/* line 84, ../scss/index.scss */
+/* line 79, ../scss/index.scss */
 .product-item .detail-link {
   display: block;
   border-radius: 10px;
@@ -2123,72 +2128,72 @@ body {
   color: #8bf;
 }
 
-/* line 92, ../scss/index.scss */
+/* line 87, ../scss/index.scss */
 .product-item .detail-link:hover {
   color: #09c;
 }
 
-/* line 96, ../scss/index.scss */
+/* line 91, ../scss/index.scss */
 .banlv-app .product-item {
   background-image: url("/img/home-banlv-app.jpg");
 }
 
-/* line 100, ../scss/index.scss */
+/* line 95, ../scss/index.scss */
 .business-intelligence .product-item {
   background-image: url("/img/home-bi.jpg");
 }
 
-/* line 104, ../scss/index.scss */
+/* line 99, ../scss/index.scss */
 .lbs-solutions .product-item {
   background-image: url("/img/home-lbs.jpg");
 }
 
 /* Coorperates Css
  *  --------------------------------- */
-/* line 110, ../scss/index.scss */
+/* line 105, ../scss/index.scss */
 .coorperates {
   padding: 20px 0;
 }
 
-/* line 114, ../scss/index.scss */
+/* line 109, ../scss/index.scss */
 .scenics {
   margin: 40px 0px;
 }
 
-/* line 118, ../scss/index.scss */
+/* line 113, ../scss/index.scss */
 .scenic-content {
   width: 100%;
   height: 80px;
   background-color: transparent;
 }
 
-/* line 124, ../scss/index.scss */
+/* line 119, ../scss/index.scss */
 .scenic-content:hover {
   background-color: transparent;
 }
 
-/* line 128, ../scss/index.scss */
+/* line 123, ../scss/index.scss */
 .coorperator {
   background-color: white;
   border: 2px solid gray;
 }
 
-/* line 133, ../scss/index.scss */
+/* line 128, ../scss/index.scss */
 .szww-logo {
   background: url(/img/coorperates/SZWW.png) no-repeat center;
 }
 
-/* line 137, ../scss/index.scss */
+/* line 132, ../scss/index.scss */
 .zhosr-logo {
   background: url(/img/coorperates/OSR.png) no-repeat center;
 }
 
-/* line 141, ../scss/index.scss */
+/* line 136, ../scss/index.scss */
 .map {
   margin-top: 40px;
   position: relative;
 }
-/* line 145, ../scss/index.scss */
+/* line 140, ../scss/index.scss */
 .map .contact-info {
   position: absolute;
   top: -420px;
@@ -2199,28 +2204,28 @@ body {
   background-color: #2cbf4d;
   opacity: 0.8;
 }
-/* line 155, ../scss/index.scss */
+/* line 150, ../scss/index.scss */
 .map .contact-info a {
   color: black;
 }
-/* line 160, ../scss/index.scss */
+/* line 155, ../scss/index.scss */
 .map ul {
   list-style-type: none;
   padding-left: 45px;
   padding-top: 45px;
 }
-/* line 166, ../scss/index.scss */
+/* line 161, ../scss/index.scss */
 .map li {
   margin-top: 20px;
   color: black;
 }
-/* line 171, ../scss/index.scss */
+/* line 166, ../scss/index.scss */
 .map i {
   font-size: 20px;
   color: white;
 }
 
-/* line 178, ../scss/index.scss */
+/* line 173, ../scss/index.scss */
 #mapContainer {
   width: 100%;
   height: 350px;
@@ -2230,17 +2235,22 @@ body {
  Medium CSS
  --------------------------------------- */
 @media only screen and (min-width: 40.063em) {
-  /* line 188, ../scss/index.scss */
+  /* line 183, ../scss/index.scss */
+  .slogan {
+    font-size: 16pt;
+  }
+
+  /* line 187, ../scss/index.scss */
   .product-item {
     height: 480px;
   }
 
-  /* line 192, ../scss/index.scss */
+  /* line 191, ../scss/index.scss */
   .product:nth-child(odd) .product-item {
     background-position: left center;
   }
 
-  /* line 196, ../scss/index.scss */
+  /* line 195, ../scss/index.scss */
   .product:nth-child(even) .product-item {
     background-position: right center;
   }
@@ -2249,21 +2259,32 @@ body {
  small CSS
  --------------------------------------- */
 @media only screen and (max-width: 40em) {
-  /* line 205, ../scss/index.scss */
+  /* line 204, ../scss/index.scss */
+  .slogan {
+    font-size: 12pt;
+  }
+
+  /* line 208, ../scss/index.scss */
+  .download {
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  /* line 213, ../scss/index.scss */
   .product {
     height: auto;
   }
 
-  /* line 209, ../scss/index.scss */
+  /* line 217, ../scss/index.scss */
   .product-item {
     width: 300px;
     background-position: center top;
   }
-  /* line 213, ../scss/index.scss */
+  /* line 221, ../scss/index.scss */
   .product-item .model {
     height: 300px;
   }
-  /* line 217, ../scss/index.scss */
+  /* line 225, ../scss/index.scss */
   .product-item .content {
     display: block;
     margin-top: 0;
