@@ -11,6 +11,7 @@
   %body.bi
     = Haml::Engine.new(header_template).render
     .first-view
+      %img.banner-image{:src => "#{$base_url}/img/products/bi-banner.jpg"}
     .section.online-manage
       .wrap.row.feature
         .model

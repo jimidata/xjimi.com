@@ -39,21 +39,18 @@
         color: white;
     }
 
-    >* {
-        height: 100%;
+    .container {
+        width: 100%;
+        margin: 20px 0 8px;
+        left: 0;
+        bottom: 0;
+
+        max-width: none;
+
+        .store-container {
+            max-width: 140px;
+        }
     }
-}
-
-.app .first-view {
-    background-image: url(#{$base-url}/img/products/app-banner.jpg);
-}
-
-.lbs .first-view {
-    background-image: url(#{$base-url}/img/products/lbs-banner.jpg);
-}
-
-.bi .first-view {
-    background-image: url(#{$base-url}/img/products/bi-banner.jpg);
 }
 
 .scenic-information .feature {
@@ -112,14 +109,14 @@
     position: absolute;
 }
 
-.lbs .first-view .container {
+.lbs .first-view .caption {
     padding: 10px 20px;
     max-width: 50%;
-    top: 50%;
-    margin-top: -100px;
-    right: 40px;
+
     background-color: rgba(240, 240, 240, 0.8);
     border-radius: 5px;
+    
+    margin: 0 auto;
 
     * {
         color: $theme-color;
@@ -179,13 +176,6 @@
  --------------------------------------- */
 
 @media #{$medium-up} { 
-    .app .first-view .container {
-        left: 50%;
-        margin-left: -270px;
-        bottom: 60px;
-        width: 540px;
-    }
-
     .radio-container.szww {
         margin-top: 24px;
     }
@@ -201,22 +191,27 @@
     .section:nth-child(even) .feature {
         background-position: left center;
     }
+    .lbs .first-view .caption {
+        max-width: 100%;
+    }
+}
+
+
+@media #{$medium-only} { 
+
 }
 
 /*
  small CSS
  --------------------------------------- */
 @media #{$small-only} { 
+    .store-icon {
+        margin: 10px 0 2px;
+    }
+
     .radio-container {
         display: inline-block;
         margin: 12px;
-    }
-
-    .app .first-view .container {
-        width: auto;
-        margin: 20px 0;
-        left: 0;
-        bottom: 0;
     }
 
     .section {
@@ -234,6 +229,17 @@
         .content {
             display: block;
             margin-top: 0;
+        }
+    }
+
+    .lbs .first-view .caption {
+        max-width: 100%;
+        h1 {
+            font-size: 28px;
+        }
+        p {
+            font-size: 12px;
+            margin-bottom: 2px;
         }
     }
 }

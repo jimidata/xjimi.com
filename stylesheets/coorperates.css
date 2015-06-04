@@ -2037,21 +2037,33 @@ body {
     padding-left: 20px;
   }
 }
-/* line 6, ../scss/coorperates.scss */
+/* line 4, ../scss/coorperates.scss */
+.first-view .caption-container {
+  height: 100%;
+  width: 100%;
+}
+/* line 9, ../scss/coorperates.scss */
+.first-view h1 {
+  position: absolute;
+  top: 34%;
+  width: 100%;
+}
+/* line 15, ../scss/coorperates.scss */
 .first-view .title {
   display: block;
-  width: 50%;
-  min-width: 300px;
-  margin: 160px auto 60px;
-}
-/* line 13, ../scss/coorperates.scss */
-.first-view .welcome {
+  width: 60%;
   margin: 0 auto;
+}
+/* line 21, ../scss/coorperates.scss */
+.first-view .welcome {
+  position: absolute;
+  left: 50%;
+  margin-left: -106px;
+  bottom: 20px;
   text-align: center;
-  position: relative;
   height: 46px;
 }
-/* line 19, ../scss/coorperates.scss */
+/* line 29, ../scss/coorperates.scss */
 .first-view .welcome .text {
   margin: 0 auto;
   font-size: 26px;
@@ -2061,7 +2073,7 @@ body {
   background-color: rgba(20, 20, 20, 0.8);
   line-height: 46px;
 }
-/* line 28, ../scss/coorperates.scss */
+/* line 38, ../scss/coorperates.scss */
 .first-view .welcome .left-arrow {
   content: "";
   font-size: 0;
@@ -2071,43 +2083,43 @@ body {
   border-right-color: rgba(20, 20, 20, 0.8);
 }
 
-/* line 39, ../scss/coorperates.scss */
+/* line 49, ../scss/coorperates.scss */
 .section {
   margin: 46px auto;
   height: 450px;
   font-size: 0;
 }
-/* line 44, ../scss/coorperates.scss */
+/* line 54, ../scss/coorperates.scss */
 .section .content {
   display: inline-block;
   vertical-align: middle;
   padding: 32px;
 }
-/* line 50, ../scss/coorperates.scss */
+/* line 60, ../scss/coorperates.scss */
 .section .title, .section .details {
   color: white;
   width: 100%;
 }
 
-/* line 56, ../scss/coorperates.scss */
+/* line 66, ../scss/coorperates.scss */
 .trend {
   background: url("/img/coorperates/trend.png") no-repeat center;
   background-size: contain;
 }
 
-/* line 61, ../scss/coorperates.scss */
+/* line 71, ../scss/coorperates.scss */
 .profit {
   background: url("/img/coorperates/profit.png") no-repeat center;
   background-size: contain;
 }
 
-/* line 66, ../scss/coorperates.scss */
+/* line 76, ../scss/coorperates.scss */
 .game {
   background: url("/img/coorperates/game.png") no-repeat center;
   background-size: contain;
 }
 
-/* line 71, ../scss/coorperates.scss */
+/* line 81, ../scss/coorperates.scss */
 .section:before {
   content: "";
   height: 450px;
@@ -2115,13 +2127,13 @@ body {
   vertical-align: middle;
 }
 
-/* line 79, ../scss/coorperates.scss */
+/* line 89, ../scss/coorperates.scss */
 .section:nth-child(even) .title, .section:nth-child(even) .details {
   float: left;
   text-align: left;
 }
 
-/* line 86, ../scss/coorperates.scss */
+/* line 96, ../scss/coorperates.scss */
 .section:nth-child(odd) .title, .section:nth-child(odd) .details {
   float: right;
   text-align: right;
@@ -2131,12 +2143,12 @@ body {
  Medium CSS
  --------------------------------------- */
 @media only screen and (min-width: 40.063em) {
-  /* line 98, ../scss/coorperates.scss */
+  /* line 108, ../scss/coorperates.scss */
   .section {
     height: 420px;
   }
 
-  /* line 102, ../scss/coorperates.scss */
+  /* line 112, ../scss/coorperates.scss */
   .section:before {
     height: 420px;
   }
@@ -2145,12 +2157,30 @@ body {
  small CSS
  --------------------------------------- */
 @media only screen and (max-width: 40em) {
-  /* line 111, ../scss/coorperates.scss */
+  /* line 122, ../scss/coorperates.scss */
+  .first-view .welcome {
+    bottom: 12px;
+    height: 24px;
+    margin-left: -60px;
+  }
+  /* line 127, ../scss/coorperates.scss */
+  .first-view .welcome .left-arrow {
+    border-width: 12px;
+    margin-left: -24px;
+  }
+  /* line 132, ../scss/coorperates.scss */
+  .first-view .welcome .text {
+    line-height: 24px;
+    font-size: 13px;
+    padding: 4px;
+  }
+
+  /* line 140, ../scss/coorperates.scss */
   .section {
     height: 300px;
   }
 
-  /* line 115, ../scss/coorperates.scss */
+  /* line 144, ../scss/coorperates.scss */
   .section:before {
     height: 300px;
   }

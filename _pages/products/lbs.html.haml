@@ -12,8 +12,9 @@
   %body.lbs
     = Haml::Engine.new(header_template).render
     .first-view
-      .wrap
-        .container
+      %img.banner-image{:src => "#{$base_url}/img/products/lbs-banner.jpg"}
+      .wrap.container
+        .caption.large-offset-6
           %h1 LBS 活动解决方案
           %p O2O连接线下丰富的主题活动资源与线上全方位的技术展现形式，提升市场热度，创立共赢平台
     .section.activities
